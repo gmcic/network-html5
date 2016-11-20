@@ -1,0 +1,15 @@
+.block .block-filter
+{
+    margin-bottom: 15px;
+}
+
+.block .block-pagination
+{
+    float: right;
+    margin-top: 15px;
+}
+
+.block .block-pagination .btn
+{
+    padding: 5px 15px;
+}

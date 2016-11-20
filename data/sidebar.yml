@@ -1,0 +1,368 @@
+
+#桌面管理
+- name: 首页
+  icon: fa fa-medkit
+  uri: /personnel/personnel_list
+  controller: PersonnelController
+  template: /curemanager/curemanager_list.html
+
+#桌面管理
+- name: 桌面管理
+  icon: fa fa-medkit
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 统计视图
+      icon: fa fa-stethoscope
+      controller: PersonnelController
+      uri: /personnel/personnel_list
+      template: /curemanager/curemanager_list.html
+
+    - name: 告警事件
+      icon: fa fa-stethoscope
+      controller: PersonnelController
+      uri: /personnel/personnel_list
+      template: /invaccine/invaccine_list.html
+
+    - name: 维规事件
+      icon: fa fa-stethoscope
+      controller: PersonnelController
+      uri: /personnel/personnel_list
+      template: /prescription/prescription_list.html
+
+    - name: 可能违规事件
+      icon: fa fa-sticky-note
+      controller: PersonnelController
+      uri: /personnel/personnel_list
+      template: /medicalrecord/list.html
+
+- name: 业务管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 业务列表
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 控制台
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 用户组管理
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 业务告警
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 运行管理
+  prefix: /basic
+  icon: glyphicon glyphicon-credit-card
+  uri: javascript:;
+  menus:
+    - name: 资源列表
+      icon: fa fa-paw
+      uri: /pet/list
+      controller: PersonnelController
+      template: /pet/pet_list.html
+
+    - name: 资源分组
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+    - name: 资源类别
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+    - name: 厂商类别
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+
+    - name: 协议参数
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+
+    - name: 模型设置
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+    - name: ipmac管理
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+    - name: 配置管理
+      icon: fa fa-user
+      uri: /vip/list
+      controller: PersonnelController
+      template: /vip/vip_list.html
+
+
+- name: 拓扑管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 拓扑视图
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 平面图
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 分层图
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 拓扑发现
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 告警中心
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 告警控制台
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 实时告警
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 历史告警
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 告警速查
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 维护记录
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 告警配置
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 资产管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 资产统计
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 综合查询
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 导入导出
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 值班管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 综合视图
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 值班记录
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 值班巡检
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 交接班
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 排班
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 值班制度
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 值班说明
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 工单管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 工单统计
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 检修计划
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 紧急抢修
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 我的工单
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 缺陷管理
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 机房管理
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 机房概览
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 机房监控
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 机房告警
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 机房报表
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+- name: 系统
+  icon: fa fa-object-ungroup
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 用户管理
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      template: /personnel/personnel_list.html
+      controller: PersonnelController
+
+    - name: 日志管理
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 修改密码
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 邮箱配置
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 短信配置
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+
+    - name: 其他
+      icon: fa fa-th-large
+      uri: /personnel/personnel_list
+      controller: PersonnelController
+      template: /personnel/personnel_list.html
+

@@ -1,0 +1,31 @@
+%nav.navbar.brb{:role => "navigation"}
+  .navbar-header
+    %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-reorder
+    %a.navbar-brand{:href => "index.html"}
+      %img{:src => "assets/images/logo.png"}/
+
+  .collapse.navbar-collapse.navbar-ex1-collapse
+    %ul.nav.navbar-nav
+      - data.sidebar.each do |header|
+        %li.dropdown
+          - if (defined? header.menus) && !header.menus.nil?
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "javascript:void"}
+              %span.icon-file-alt
+              #{header.name}
+
+          - else
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "##{header.uri}"}
+              %span.icon-file-alt
+              #{header.name}
+
+          - if (defined? header.menus) && !header.menus.nil?
+            %ul.dropdown-menu
+              - header.menus.each do |menu|
+                %li
+                  %a{:href => "##{menu.uri}"} #{menu.name}
+
+    %form.navbar-form.navbar-right{:role => "search"}
+      .form-group
+        %input.form-control{:placeholder => "search...", :type => "text"}/

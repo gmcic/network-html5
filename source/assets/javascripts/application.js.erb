@@ -1,0 +1,44 @@
+angular.module('fiona', ['ngRoute','fiona.services','blueimp.fileupload'])
+    .config(['$routeProvider','$httpProvider', function($routeProvider,$httpProvider) {
+       delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+        $httpProvider.interceptors.push('UserInterceptor');
+
+        $routeProvider
+            .when('/', {
+                controller: "DashboardController",
+                templateUrl: "views/dashboard.html"
+            })
+
+<% data.sidebar.each do |header| %>
+    <% if (defined? header.controller) && !header.controller.nil? %>
+            .when('<%=header.uri%>', {
+                controller: '<%=header.controller%>',
+                templateUrl: 'views<%=header.prefix%><%=header.template%>'
+            })
+    <% end %>
+
+    <% if (defined? header.menus) && !header.menus.nil? %>
+        <% header.menus.each do |menu| %>
+            // <%=menu.name%>
+            .when('<%=menu.uri%>', {
+                controller: '<%=menu.controller%>',
+                templateUrl: 'views<%=header.prefix%><%=menu.template%>'
+            })
+        <% end %>
+    <% end %>
+
+<% end %>
+
+            .otherwise({redirectTo: '/'});
+    }])
+    // 首页面
+    .controller('DashboardController', function($scope) {
+        // define controller to prevent console error
+
+        $scope.userName = 'tim';
+    })
+
+    .controller('InboxController', function($scope, $routeParams, $location) {
+        $scope.name = $routeParams.name;
+    });

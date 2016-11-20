@@ -1,0 +1,18 @@
+- $click = ((defined? click) ? click: "removes()")
+
+- $label = ((defined? label) ? label: "删除")
+
+- $disabled = ((defined? disabled) ? disabled: "isRemoves")
+
+- if (defined? show) && (show != "")
+  %button.btn.btn-circle.red-sunglo.btn-sm{:type => "button", 'ng': {'click':"#{$click}", 'disabled': "#{$disabled}", 'show': "#{show}"}}
+    %i.fa.fa-trash
+    #{$label}
+
+- else
+  %button.btn.btn-circle.red-sunglo.btn-sm{:type => "button", 'ng': {'click':"#{$click}", 'disabled': "#{$disabled}"}}
+    %i.fa.fa-trash
+    #{$label}
+
+
+

@@ -1,0 +1,92 @@
+- @portal_id = @portal_id || @page_id
+
+- @portal_name = @portal_name || @page_title
+
+- @portal_object = "" << @portal_id << "portal"
+
+- $pagefilter = (defined? pagefilter)? " | filter: " << pagefilter : (defined? filterbar) && filterbar == "page"? " | filter: pageFilterText": ""
+
+- @portal_prefix = @module[@portal_id]
+
+- @portal = data["" << @module[@portal_id] << "-" << @portal_id]
+
+-#- puts $pagefilter
+
+- $listdataKey = (defined? listdataKey)? listdataKey : "listFields";
+
+/ PORTLET {"ng": {"show": "!!#{@page_id}.id"}}
+.portlet.light.bordered
+  .portlet-title
+    .caption.font-dark
+      %i.fa.fa-beer.font-dark
+      %span.caption-subject.bold.uppercase= @portal_name
+    .actions
+      - if defined? yield
+        =yield
+
+  .portlet-body
+
+    - if (!defined? filterbar) || filterbar == 'normal'
+      .table-toolbar
+        %form{:name=>"searchform", :role => "form"}
+          .row
+            .col-md-8
+              = partial :'layouts/widget/filter'
+
+    - elsif filterbar == 'page'
+      .table-toolbar
+        %form{:name=>"searchform", :role => "form"}
+          .row
+            .col-md-8
+              = partial :'layouts/widget/filter_withpage'
+
+    -#嵌套模块
+    %table.table.table-striped.table-hover.table-bordered
+      %thead
+        %tr
+          - @portal[$listdataKey].each do |field|
+            %th #{field.aliasName || field.fieldName}
+
+      %tbody
+        %tr.odd.gradeX{ "ng-repeat" => @portal_id + " in " + @portal_id + "s" + $pagefilter}
+          - if (!defined? inline_toolbar ) || inline_toolbar != 'none'
+            %td
+              - inline_attr_show = (defined? inline_toolbar) && (inline_toolbar.include? "auditing") ? (@portal_id + ".status.dictDetailCode != 'SM00043'") : ""
+
+              // 查看按钮
+              - if (!defined? inline_toolbar) || ( inline_toolbar.include? "view" )
+                = partial :'layouts/buttons/btn', :locals => {:label => "查看", :icon => "fa-file-o", :click => @portal_id + 'portal.view(' + @portal_id + '.id)'}
+
+              // 修改按钮
+              - if (!defined? inline_toolbar) || ( inline_toolbar.include? "update" )
+                = partial :'layouts/buttons/update', :locals => {:click => @portal_id + 'portal.update(' + @portal_id + '.id)', :show => "#{inline_attr_show}"}
+
+              // 删除按钮
+              - if (!defined? inline_toolbar) || ( inline_toolbar.include? "remove" )
+                = partial :'layouts/buttons/remove', :locals => {:click => @portal_id + 'portal.remove(' + @portal_id + ')', :show => "#{inline_attr_show}"}
+
+              // 选择按钮
+              - if (defined? inline_toolbar) && ( inline_toolbar.include? "selected" )
+                = partial :'layouts/buttons/btn_info', :locals => {:click => @portal_id + 'portal.checked(' + @portal_id + '.id)' , :label => '选择', :icon => "fa-check"}
+
+              // 选择按钮
+              - if (defined? inline_toolbar) && ( inline_toolbar.include? "checked" )
+                = partial :'layouts/buttons/btn', :locals => {:label => "选择", :icon => "fa-circle-o", :click => @portal_id + 'portal.update(' + @portal_id + '.id)'}
+
+              // 审核按钮
+              - if (defined? inline_toolbar) && ( inline_toolbar.include? "auditing" )
+                = partial :'layouts/buttons/btn', :locals => {:label => "审核", :icon => "fa-gavel", :click => @portal_id + 'portal.auditing(' + @portal_id + '.id)', :show => "#{inline_attr_show}"}
+
+          - @portal[$listdataKey].each do |column|
+            %td
+              - if column.filter?
+                = bindFilter @portal_id, (column.fieldKey || @portal.fields[column.fieldName] || 'error'), column.filter
+
+              - else
+                = bind @portal_id, (column.fieldKey || @portal.fields[column.fieldName] || 'error')
+
+    - if !(defined? pagingbar)
+      .row
+        .col-md-12.col-sm-12
+          = partial :'layouts/widget/pagination'
+

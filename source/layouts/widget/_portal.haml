@@ -1,0 +1,34 @@
+- @portal_id = @portal_id || @page_id
+
+- @portal_name = @portal_name || @page_title
+
+- @portal_object = "" << @portal_id << "portal"
+
+- $pagefilter = (defined? pagefilter)? " | " << pagefilter : (defined? filterbar) && filterbar == "page"? " | filter: pageFilterText": ""
+
+- @portal_prefix = @module[@portal_id]
+
+- @portal = data["" << @module[@portal_id] << "-" << @portal_id]
+
+-#- puts $pagefilter
+
+- $listdataKey = (defined? listdataKey)? listdataKey : "listFields";
+
+- if (!defined? bordered) || (bordered == "true")
+  / PORTLET {"ng": {"show": "!!#{@page_id}.id"}}
+  .block
+    .header
+      = @portal_name
+      .pull-right
+        - if defined? yield
+          =yield
+
+        - else
+          = partial :'layouts/buttons/insert', :locals => {:click => "#{@portal_id}portal.insert()"}
+          = partial :'layouts/buttons/removes', :locals => {:click => "#{@portal_id}portal.removes()", :disabled => "#{@portal_id}portal.isRemoves"}
+
+    .content
+      = partial 'layouts/widget/portal_table', :locals => locals
+
+- else
+  = partial 'layouts/widget/portal_table', :locals => locals
