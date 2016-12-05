@@ -1,4 +1,4 @@
-dashboard: dashboard
+dashboard: app
 
 # Cases
 case: api

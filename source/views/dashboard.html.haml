@@ -3,433 +3,225 @@
 .row
   .col-md-2
     .block.block-drop-shadow
+      // 用户信息
       .user.bg-default.bg-light-rtl
         .info
           %a.informer.informer-three{:href => "#"}
             %span 14 / 255
-            Messages
+            消息
           %a.informer.informer-four{:href => "#"}
-            %span $549.44
-            Balance
-          %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry_b.jpg"}/
+            %span 6
+            待办
+          %img.img-circle.img-thumbnail{:src => "assets/images/example/user/logo.jpg"}/
       .content.list-group.list-group-icons
         %a.list-group-item{:href => "component_messages.html"}
           %span.icon-envelope>
-          Messages
+          拓扑
           %i.icon-angle-right.pull-right
         %a.list-group-item{:href => "component_charts.html"}
           %span.icon-bar-chart>
-          Statistic
+          机房
           %i.icon-angle-right.pull-right
         %a.list-group-item{:href => "sample_profile.html"}
           %span.icon-cogs>
-          Settings
+          设置
           %i.icon-angle-right.pull-right
         %a.list-group-item{:href => "sample_login.html"}
           %span.icon-off>
-          Logout
+          退出
           %i.icon-angle-right.pull-right
+
     .block.block-drop-shadow
       .head.bg-dot20
-        %h2 CPU
+        %h2 核心设备
         .side.pull-right
           %ul.buttons
             %li
               %a{:href => "#"}
                 %span.icon-cogs
-        .head-subtitle Intel Core2 Duo T6670 2.20GHz
+
         .head-panel.nm
-          .hp-info.hp-simple.pull-left.hp-inline
+          .hp-info.hp-simple.pull-left.hp-inline{"style": "padding: 5px 0px 5px 0px"}
+            .list-status.list-status-offline{"style": "width: 15px; height: 15px;margin-top: -10px"}
             %span.hp-main
-              Core 0
+              市核心网络设备
               %span.icon-angle-right
-              89%
-            .hp-sm
-              .progress.progress-small
-                .progress-bar.progress-bar-danger{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "89", :role => "progressbar", :style => "width: 89%"}
-          .hp-info.hp-simple.pull-left.hp-inline
+              异常
+
+          .hp-info.hp-simple.pull-left.hp-inline{"style": "padding: 5px 0px 5px 0px"}
             %span.hp-main
-              Core 1
+              县核心网络设备
               %span.icon-angle-right
-              56%
-            .hp-sm
-              .progress.progress-small
-                .progress-bar.progress-bar-warning{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "56", :role => "progressbar", :style => "width: 56%"}
+              正常
+            .list-status.list-status-online{"style": "width: 15px; height: 15px;margin-top: -10px"}
+
     .block.block-drop-shadow
       .head.bg-dot20
-        %h2 Memory
+        %h2 监控设备统计
         .side.pull-right
           %ul.buttons
             %li
               %a{:href => "#"}
                 %span.icon-cogs
-        .head-subtitle Kingston 2x8Gb DDR3 1866MHz
+
         .head-panel.nm.tac
           .sparkline
-            %span{:sparkheight => "100", :sparktype => "pie", :sparkwidth => "100"} 5079,3768,7537
+            %span{:sparkheight => "100", :sparktype => "pie", :sparkwidth => "100"} 5079,3768,7537,3948, 28380
         .head-panel.nm
           .hp-info.hp-simple.pull-left.hp-inline
             %span.hp-main
               %span.icon-circle
-              Allocated 5079 Mb [ 31% ]
+              网络设备 [ 5079 ]
           .hp-info.hp-simple.pull-left.hp-inline
             %span.hp-main
               %span.icon-circle.text-info
-              In Cache 3768 Mb [ 23% ]
+              主机设备 [ 3768 ]
           .hp-info.hp-simple.pull-left.hp-inline
             %span.hp-main
-              %span.icon-circle.text-primary
-              Aviable 7537 Mb [ 46% ]
-    .block.block-drop-shadow
-      .head.bg-dot20
-        %h2 Volumes status
-        .side.pull-right
-          %ul.buttons
-            %li
-              %a{:href => "#"}
-                %span.icon-cogs
-        .head-subtitle WD Caviar Blue 1TB
-        .head-panel.nm.tac{:style => "line-height: 0px;"}
-          .knob
-            %input{"data-fgcolor" => "#3F97FE", "data-height" => "100", "data-max" => "1024", "data-min" => "0", "data-readonly" => "true", "data-width" => "100", :type => "text", :value => "654"}/
-        .head-panel.nm
+              %span.icon-circle.text-danger
+              安全设备 [ 7537 ]
+
           .hp-info.hp-simple.pull-left.hp-inline
-            %span.hp-main Volume 1 [ 0.5 TB ]
-            %span.hp-sm Used: 450.0 GB [ 90% ]
-            %span.hp-sm Free: 50.0 GB [ 10% ]
+            %span.hp-main
+              %span.icon-circle.text-success
+              数据库 [ 3948 ]
+
           .hp-info.hp-simple.pull-left.hp-inline
-            %span.hp-main Volume 2 [ 0.5 TB ]
-            %span.hp-sm Used: 154.0 GB [ 30% ]
-            %span.hp-sm Free: 346.0 GB [ 70% ]
-  .col-md-5
-    .block.block-drop-shadow
-      .head.bg-default.bg-light-ltr
-        %h2 Total sales
-        .side.pull-right
-          %ul.buttons
-            %li
-              %a{:href => "#"}
-                %span.icon-cogs
-        .head-panel.nm
-          .left_abs_100{:style => "margin-top: 20px;"}
-            .knob
-              %input{"data-fgcolor" => "#FFFFFF", "data-height" => "100", "data-max" => "200", "data-min" => "0", "data-readonly" => "true", "data-width" => "100", :type => "text", :value => "155"}/
-          #dash_chart_1.chart{:style => "height: 150px;"}
-        .head-panel.nm
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-thumbs-up-alt
-            %span.hp-main 155
-            %span.hp-sm Sales
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-thumbs-down-alt
-            %span.hp-main 23
-            %span.hp-sm Cancelled
-          .hp-info.pull-right
-            .hp-icon
-              %span.icon-usd
-            %span.hp-main 19,215.23
-            %span.hp-sm Total Income
-      .content.list
-        .list-title
-          Previous months
-        .list-item
-          .list-text
-            %strong May 2013
-            .progress.progress-small
-              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 75%"}
-        .list-item
-          .list-text
-            %strong April 2013
-            .progress.progress-small
-              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "64", :role => "progressbar", :style => "width: 64%"}
-        .list-item
-          .list-text
-            %strong March 2013
-            .progress.progress-small
-              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "58", :role => "progressbar", :style => "width: 58%"}
-        .list-item
-          .list-text
-            %strong February 2013
-            .progress.progress-small
-              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "72", :role => "progressbar", :style => "width: 72%"}
-        .list-item
-          .list-text
-            %strong January 2013
-            .progress.progress-small
-              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "83", :role => "progressbar", :style => "width: 83%"}
-      .footer.footer-defaut.tac
-        .pull-left{:style => "width: 200px;"}
-          .input-group
-            .input-group-addon
-              %span.icon-calendar
-            %input.datepicker.form-control{:type => "text", :value => "10/08/2013"}/
-            .input-group-btn
-              %button.btn
-                %span.icon-search
-        .pull-right
-          %a{:href => "#"} More information
-    .block.block-drop-shadow
-      .head.bg-dot30
-        %h2 This week visits
-        .side.pull-right
-          %ul.buttons
-            %li
-              %a{:href => "#"}
-                %span.icon-refresh
-            %li
-              %a{:href => "#"}
-                %span.icon-cogs
-        .head-panel
-          #dash_chart_2.chart{:style => "height: 150px;"}
-      .head.bg-dot30
-        .head-panel.nm
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-globe
-            %span.hp-main 12,480
-            %span.hp-sm Total visits
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-desktop
-            %span.hp-main{:style => "margin-left: 35px;"} 10,140
-            %span.hp-sm{:style => "margin-left: 35px;"} Desktop
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-laptop
-            %span.hp-main{:style => "margin-left: 35px;"} 1,204
-            %span.hp-sm{:style => "margin-left: 35px;"} Desktop
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-tablet
-            %span.hp-main 322
-            %span.hp-sm Tablet
-          .hp-info.pull-left
-            .hp-icon
-              %span.icon-mobile-phone
-            %span.hp-main 814
-            %span.hp-sm Mobile
-      .head.bg-dot30
-        %h2 Visits by browser
-        .head-panel.nm
-          .progress
-            .progress-bar.progress-bar-success.tip{:style => "width: 35%", :title => "Chrome"}
-            .progress-bar.progress-bar-info.tip{:style => "width: 20%", :title => "Firefox"}
-            .progress-bar.progress-bar-warning.tip{:style => "width: 20%", :title => "Opera"}
-            .progress-bar.progress-bar-danger.tip{:style => "width: 10%", :title => "Safari"}
-            .progress-bar.tip{:style => "width: 15%", :title => "Internet Explorer"}
-  .col-md-5
-    .block.block-drop-shadow
-      .head.bg-default.bg-light-rtl
-        %h2 Inbox messages
-        .side.pull-right
-          %ul.buttons
-            %li
-              %a{:href => "#"}
-                %span.icon-plus
-            %li
-              %a{:href => "#"}
-                %span.icon-cogs
-        .head-panel.nm
-          %a.hp-info.pull-left{:href => "#"}
-            .hp-icon
-              %span.icon-download-alt
-            %span.hp-main 25
-            %span.hp-sm recived
-          %a.hp-info.pull-left{:href => "#"}
-            .hp-icon
-              %span.icon-upload-alt
-            %span.hp-main 10
-            %span.hp-sm sent
-          %a.hp-info.hp-one.pull-right.tip{:href => "#", :title => "Refresh"}
-            .hp-icon
-              %span.icon-refresh
-            %span.hp-main 9:24 am
-      .content.list
-        .list-item
-          .list-datetime
-            .time 9:45 am
-          .list-info
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry.jpg"}/
-          .list-text
-            %a.list-text-name{:href => "#"} John Doe
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit.
-          .list-controls
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-rotate-right
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-pushpin
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-remove
-        .list-item
-          .list-datetime
-            .time 8:16 am
-          .list-info
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/alexey.jpg"}/
-          .list-text
-            %a.list-text-name{:href => "#"} Brad Pitt
-            %p Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque.
-          .list-controls
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-rotate-right
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-pushpin
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-remove
-        .list-item
-          .list-datetime
-            .date 27.08
-            .time 9:59 pm
-          .list-info
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/olga.jpg"}/
-          .list-text
-            %a.list-text-name{:href => "#"} Angelina Jolie
-            %p Morbi tincidunt, tellus ut fermentum accumsan, est justo pretium enim, eget.
-          .list-controls
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-rotate-right
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-pushpin
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-remove
-        .list-item
-          .list-datetime
-            .date 27.08
-            .time 4:34 pm
-          .list-info
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/helen.jpg"}/
-          .list-text
-            %a.list-text-name{:href => "#"} Keira Knightley
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit.
-          .list-controls
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-rotate-right
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-pushpin
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-remove
-        .list-item
-          .list-datetime
-            .date 26.08
-            .time 12:12 am
-          .list-info
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry.jpg"}/
-          .list-text
-            %a.list-text-name{:href => "#"} John Doe
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit.
-          .list-controls
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-rotate-right
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-pushpin
-            %a.widget-icon.widget-icon-circle{:href => "#"}
-              %span.icon-remove
-      .footer.tac
-        %a{:href => "#"} Load more messages...
-    .block.block-drop-shadow
-      .header
-        %h2 Messaging
-        .side.pull-right
-          %ul.buttons
-            %li
-              %a{:href => "#"}
-                %span.icon-user
-            %li
-              %a{:href => "#"}
-                %span.icon-cogs
-      .content.messages.npr.npb
-        .scroll.oh{:style => "height: 250px;"}
-          .messages-item
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry_s.jpg"}/
-            .messages-item-text Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque
-            .messages-item-date 14:33 30.08.2013
-          .messages-item.inbox
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/olga_s.jpg"}/
-            .messages-item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit
-            .messages-item-date 14:32 30.08.2013
-          .messages-item
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry_s.jpg"}/
-            .messages-item-text Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque
-            .messages-item-date 14:20 30.08.2013
-          .messages-item.inbox
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/olga_s.jpg"}/
-            .messages-item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit
-            .messages-item-date 14:19 30.08.2013
-          .messages-item
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry_s.jpg"}/
-            .messages-item-text Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque
-            .messages-item-date 14:15 30.08.2013
-          .messages-item.inbox
-            %img.img-circle.img-thumbnail{:src => "assets/images/example/user/olga_s.jpg"}/
-            .messages-item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit
-            .messages-item-date 14:10 30.08.2013
-      .footer
-        .input-group
-          %span.input-group-addon
-            %i.icon-comment
-          %input.form-control{:placeholder => "message..", :type => "text"}/
-          %span.input-group-btn
-            %button.btn
-              %span.icon-chevron-up
+            %span.hp-main
+              %span.icon-circle.text-warning
+              中间件 [ 28380 ]
+
+  .col-md-10
+    .row
+      .col-md-12
+        -# VRV
+        .block.block-drop-shadow
+          .head.bg-dot30
+            %h2 VRV
+            .side.pull-right
+              %ul.buttons
+                %li
+                  %a{:href => "#"}
+                    %span.icon-refresh
+                %li
+                  %a{:href => "#"}
+                    %span.icon-cogs
+            .head-panel
+              #dash_chart_2.chart{:style => "height: 150px;"}
+
+          .head.bg-dot30
+            .head-panel.nm
+              .hp-info.pull-left{"ng-repeat" => "vrv in vrvs"}
+                .hp-icon
+                  %span{'ng-class' => 'vrv.icon'}
+                %span.hp-main {{vrv.data}}
+                %span.hp-sm {{vrv.name}}
+    .row
+      .col-md-6
+        .block.block-drop-shadow
+          .head.bg-default.bg-light-ltr
+            %h2 H3C系统告警
+            .side.pull-right
+              %ul.buttons
+                %li
+                  %a{:href => "#"}
+                    %span.icon-cogs
+            .head-panel.nm
+              .left_abs_100{:style => "margin-top: 20px;"}
+                .knob
+                  %input{"data-fgcolor" => "#FFFFFF", "data-height" => "100", "data-max" => "200", "data-min" => "0", "data-readonly" => "true", "data-width" => "100", :type => "text", :value => "155"}/
+
+              #dash_chart_1.chart{:style => "height: 150px;"}
+
+        .block.block-drop-shadow
+          .head.bg-default.bg-light-rtl
+            %h2 公告
+            .side.pull-right
+              %ul.buttons
+                %li
+                  %a{:href => "#"}
+                    %span.icon-plus
+                %li
+                  %a{:href => "#"}
+                    %span.icon-cogs
+            .head-panel.nm
+              %a.hp-info.pull-left{:href => "#"}
+                .hp-icon
+                  %span.icon-download-alt
+                %span.hp-main 25
+                %span.hp-sm 接收
+              %a.hp-info.pull-left{:href => "#"}
+                .hp-icon
+                  %span.icon-upload-alt
+                %span.hp-main 10
+                %span.hp-sm 发布
+              %a.hp-info.hp-one.pull-right.tip{:href => "#", :title => "Refresh"}
+                .hp-icon
+                  %span.icon-refresh
+                %span.hp-main 9:24 上午
+
+          .content.list
+            .list-item{"ng-repeat" => "notice in notices"}
+              .list-datetime
+                .date {{notice.date}}
+                .time {{notice.time}}
+              -#.list-info
+              -#  %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry.jpg"}/
+              .list-text
+                %label.label.label-success.pull-right{"ng-if" => "notice.enable"} 有效
+                %label.label.label-danger.pull-right{"ng-if" => "!notice.enable"} 无效
+                %a.list-text-name{:href => "#"}
+                  {{notice.type}}
+                  %small ({{notice.dept}})
+
+                %p {{notice.text}}
+
+          .footer.tac
+            %a{:href => "#"} 查看更多公告...
+
+
+      .col-md-6
+
+        .block.block-drop-shadow
+          .head.bg-default.bg-light-ltr
+            %h2 UICS告警
+            .side.pull-right
+              %ul.buttons
+                %li
+                  %a{:href => "#"}
+                    %span.icon-cogs
+            .head-panel.nm
+              .left_abs_100{:style => "margin-top: 20px;"}
+                .knob
+                  %input{"data-fgcolor" => "#FFFFFF", "data-height" => "100", "data-max" => "200", "data-min" => "0", "data-readonly" => "true", "data-width" => "100", :type => "text", :value => "155"}/
+
+              #dash_chart_3.chart{:style => "height: 150px;"}
+
+        .block.block-drop-shadow
+          .header
+            %h2 待办事项
+            .side.pull-right
+              %ul.buttons
+                %li
+                  %a{:href => "#"}
+                    %span.icon-user
+                %li
+                  %a{:href => "#"}
+                    %span.icon-cogs
+          .content.messages.npr.npb
+            .messages-item{"ng-repeat" => "todo in todolists"}
+              %div{:style => "margin-bottom: 5px"}
+                .messages-item-date.pull-right {{todo.time}}
+                %a.widget-icon{:href => "#none"}
+                  %span.icon-tasks
+
+                %b {{todo.type}}
+
+              .messages-item-text{"style" => "margin-left: 20px;"} {{todo.title}}
+
+
 .row
   .page-footer
     .page-footer-wrap
       .side.pull-left
         Copyirght &amp;COPY; YourCompany 2013. All rights reserved.
-
--#.site-settings
--#  .site-settings-button
--#    %span.icon-cog.icon-spin
--#  .site-settings-content
--#    .block.block-transparent.nm
--#      .header
--#        %h2 Themes
--#      .content.controls
--#        .form-row
--#          .col-md-12
--#            %a.ss_theme.bg-default{"data-value" => "default"}
--#            %a.ss_theme.theme-black{"data-value" => "theme-black"}
--#            %a.ss_theme.theme-white{"data-value" => "theme-white"}
--#            %a.ss_theme.theme-dark{"data-value" => "theme-dark"}
--#            %a.ss_theme.theme-green{"data-value" => "theme-green"}
--#      .header
--#        %h2 Backgrounds
--#      .content.controls
--#        .form-row
--#          #ss_backgrounds.col-md-12
--#      .header
--#        %h2 Wallpapers
--#      .content.controls
--#        .form-row
--#          .col-md-12
--#            %a.ss_background.wall-num1{"data-value" => "wall-num1"}
--#            %a.ss_background.wall-num2{"data-value" => "wall-num2"}
--#            %a.ss_background.wall-num3{"data-value" => "wall-num3"}
--#            %a.ss_background.wall-num4{"data-value" => "wall-num4"}
--#            %a.ss_background.wall-num5{"data-value" => "wall-num5"}
--#            %a.ss_background.wall-num6{"data-value" => "wall-num6"}
--#            %a.ss_background.wall-num7{"data-value" => "wall-num7"}
--#            %a.ss_background.wall-num8{"data-value" => "wall-num8"}
--#            %a.ss_background.wall-num9{"data-value" => "wall-num9"}
--#            %a.ss_background.wall-num10{"data-value" => "wall-num10"}
--#            %a.ss_background.wall-num11{"data-value" => "wall-num11"}
--#            %a.ss_background.wall-num12{"data-value" => "wall-num12"}
--#            %a.ss_background.wall-num13{"data-value" => "wall-num13"}
--#            %a.ss_background.wall-num14{"data-value" => "wall-num14"}
--#            %a.ss_background.wall-num15{"data-value" => "wall-num15"}
--#            %a.ss_background.wall-num16{"data-value" => "wall-num16"}
--#      .header
--#        %h2 Layout
--#      .content.controls
--#        .form-row
--#          .col-md-6
--#            .checkbox
--#              %label
--#                %input.ss_layout{:name => "layout", :type => "radio", :value => "liquid"}/
--#                Liquid
--#          .col-md-6
--#            .checkbox
--#              %label
--#                %input.ss_layout{:name => "layout", :type => "radio", :value => "fixed"}/
--#                Fixed

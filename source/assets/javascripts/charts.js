@@ -8,7 +8,13 @@ $(document).ready(function(){
                                   series: {lines: { show: true }, points: { show: true }},
                                   grid: { hoverable: true, clickable: true, margin: {left: 110}},
                                   xaxis: {ticks: [[1,'Mon'],[2,'Tue'],[3,'Wed'],[4,'Thu'],[5,'Fri'],[6,'Sat'],[7,'Sun']]},
-                                  legend: {show: false}});          
+                                  legend: {show: false}});
+
+        var dash_chart_3 = $.plot($("#dash_chart_3"), [{ data: data, label: "Sales"}],{
+                                  series: {lines: { show: true }, points: { show: true }},
+                                  grid: { hoverable: true, clickable: true, margin: {left: 110}},
+                                  xaxis: {ticks: [[1,'Mon'],[2,'Tue'],[3,'Wed'],[4,'Thu'],[5,'Fri'],[6,'Sat'],[7,'Sun']]},
+                                  legend: {show: false}});
         
     }
     

@@ -2,9 +2,9 @@
 #桌面管理
 - name: 首页
   icon: fa fa-medkit
-  uri: /personnel/personnel_list
-  controller: PersonnelController
-  template: /curemanager/curemanager_list.html
+  uri: /
+  controller: DashboardController
+  template: /dashboard.html
 
 #桌面管理
 - name: 桌面管理

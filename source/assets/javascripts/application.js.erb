@@ -5,6 +5,7 @@ angular.module('fiona', ['ngRoute','fiona.services','blueimp.fileupload'])
         $httpProvider.interceptors.push('UserInterceptor');
 
         $routeProvider
+            // 首页面
             .when('/', {
                 controller: "DashboardController",
                 templateUrl: "views/dashboard.html"
@@ -32,13 +33,6 @@ angular.module('fiona', ['ngRoute','fiona.services','blueimp.fileupload'])
 
             .otherwise({redirectTo: '/'});
     }])
-    // 首页面
-    .controller('DashboardController', function($scope) {
-        // define controller to prevent console error
-
-        $scope.userName = 'tim';
-    })
-
     .controller('InboxController', function($scope, $routeParams, $location) {
         $scope.name = $routeParams.name;
     });
