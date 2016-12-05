@@ -12,12 +12,12 @@
         %li.dropdown
           - if (defined? header.menus) && !header.menus.nil?
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "javascript:void"}
-              %span.icon-file-alt
+              %span{:class => "#{header.icon || 'icon-bar-chart'}" }
               #{header.name}
 
           - else
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "##{header.uri}"}
-              %span.icon-file-alt
+              %span{:class => "#{header.icon || 'icon-bar-chart'}" }
               #{header.name}
 
           - if (defined? header.menus) && !header.menus.nil?
