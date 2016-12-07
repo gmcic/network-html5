@@ -4,30 +4,36 @@
     .row
       .col-md-12
 
-    .content.controls.npt
-      .form-row
-        .col-md-12.text-center
-          %img{:src => "assets/images/login_logo.png", :width => '200px'}/
+    %form#frm{:action=> 'j_security_check', :method => 'POST', :role => 'form'}
+      .content.controls.npt
+        .form-row
+          .col-md-12.text-center
+            %img{:src => "assets/images/page-logo.png", :width => '200px'}/
 
-      .form-row
-        .col-md-12
-          .input-group
-            .input-group-addon
-              %span.icon-user
-            %input.form-control{:placeholder => "帐号", :type => "text"}/
-      .form-row
-        .col-md-12
-          .input-group
-            .input-group-addon
-              %span.icon-key
-            %input.form-control{:placeholder => "密码", :type => "password"}/
-      .form-row
-        .col-md-6
-          %a.btn.btn-default.btn-block.btn-clean{:href => "#"} 登录
+        .form-row
+          .col-md-12
+            %input#j_password{:name => "j_password", :type => "hidden"}
+            &nbsp;
 
-        .col-md-6
-          %a.btn.btn-default.btn-block.btn-clean{:href => "#"} 关闭
+        .form-row
+          .col-md-12
+            .input-group
+              .input-group-addon
+                %span.icon-user
+              %input#j_username.form-control{:placeholder => "帐号", :type => "text"}/
+        .form-row
+          .col-md-12
+            .input-group
+              .input-group-addon
+                %span.icon-key
+              %input#jj_password.form-control{:placeholder => "密码", :type => "password"}/
+        .form-row
+          .col-md-6
+            %a.btn.btn-default.btn-block.btn-clean{:href => "#"} 登录
 
-      .form-row
-        .col-md-12
-          %a.btn.btn-link.btn-block{:href => "#"} 忘记密码?
+          .col-md-6
+            %a.btn.btn-default.btn-block.btn-clean{:href => "#"} 关闭
+
+        .form-row
+          .col-md-12
+            %a.btn.btn-link.btn-block{:href => "#"} 忘记密码?

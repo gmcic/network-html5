@@ -15,14 +15,14 @@
     - name: 统计视图
       icon: fa fa-stethoscope
       controller: PersonnelController
-      uri: /personnel/personnel_list
+      uri: /views/index.html
       template: /curemanager/curemanager_list.html
 
     - name: 告警事件
       icon: fa fa-stethoscope
       controller: PersonnelController
-      uri: /personnel/personnel_list
-      template: /invaccine/invaccine_list.html
+      uri: /iframe
+      template: /flash/iframe.html
 
     - name: 维规事件
       icon: fa fa-stethoscope

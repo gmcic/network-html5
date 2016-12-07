@@ -108,6 +108,7 @@ $(document).ready(function(){
     /* eof input file */ 
 
     /* user change */
+
 //    $(".user-change-button").click(function(){
 //       $(this).parents(".block").find('.user-change').animate({opacity: 0},400,function(){
 //           $(this).find('img').attr('src','assets/images/user.jpg');

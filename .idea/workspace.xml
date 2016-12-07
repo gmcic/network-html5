@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02a1272-3ef6-4b84-887c-36ba4cd54af6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/images/login_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/images/page-home-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/images/page-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/ChangeLog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/jquery.mousewheel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/basic/flash/iframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sidebar.yml" afterPath="$PROJECT_DIR$/data/sidebar.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/actions.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/login.haml" afterPath="$PROJECT_DIR$/source/layouts/login.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" afterPath="$PROJECT_DIR$/source/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" afterPath="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/login.html.haml" afterPath="$PROJECT_DIR$/source/login.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/views/dashboard.html.haml" afterPath="$PROJECT_DIR$/source/views/dashboard.html.haml" />
     </list>
     <ignored path="network-html5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,9 +39,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="application.js.erb" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="525">
+                    <caret line="35" column="32" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="32" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -33,18 +71,8 @@
       <file leaf-file-name="_navbar.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/layouts/partials/_navbar.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html.haml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/views/dashboard.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="390">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -53,51 +81,19 @@
       <file leaf-file-name="sidebar.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/layouts/login.haml">
+      <file leaf-file-name="iframe.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/login.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/layouts/application.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="13" column="47" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="47" />
-              <folding>
-                <marker date="1480215452000" expanded="true" signature="167:235" placeholder="%link{:href =&gt; &quot;favicon.ico&quot;, :rel =&gt; &quot;icon&quot;, :type =&gt; &quot;image/ico&quot;}/" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -138,20 +134,30 @@
         <option value="$PROJECT_DIR$/source/views/dashboard/_user_info.haml" />
         <option value="$PROJECT_DIR$/source/assets/pages/DashboardController.js" />
         <option value="$PROJECT_DIR$/source/layouts/application.haml" />
-        <option value="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
-        <option value="$PROJECT_DIR$/data/sidebar.yml" />
         <option value="$PROJECT_DIR$/source/layouts/login.haml" />
+        <option value="$PROJECT_DIR$/source/views/dashboard.html.haml" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/actions.js" />
         <option value="$PROJECT_DIR$/source/login.html.haml" />
-        <option value="$PROJECT_DIR$/source/views/dashboard.html.haml" />
+        <option value="$PROJECT_DIR$/build/login.jsp" />
+        <option value="$PROJECT_DIR$/source/login.jsp" />
+        <option value="$PROJECT_DIR$/data/sidebar.yml" />
+        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html.haml" />
+        <option value="$PROJECT_DIR$/source/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" />
+        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html" />
+        <option value="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1004" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -178,8 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +250,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,15 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,20 +302,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../taurus-guides" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
+    <property name="SearchEverywhereHistoryKey" value="_nav&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/views/basic" />
       <recent name="$PROJECT_DIR$/source/assets/plugins" />
       <recent name="$PROJECT_DIR$/source/assets/javascripts/plugins/plupload/jquery.plupload.queue" />
       <recent name="$PROJECT_DIR$/source/assets/plugins/jquery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/assets/plugins" />
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/source/views" />
       <recent name="$PROJECT_DIR$/source/assets/images" />
       <recent name="$PROJECT_DIR$/source/assets/images/example/user" />
-      <recent name="$PROJECT_DIR$/source" />
-      <recent name="$PROJECT_DIR$/source/assets/images/background" />
-      <recent name="$PROJECT_DIR$/source/assets/javascripts/plugins/plupload/img" />
     </key>
   </component>
   <component name="RunManager">
@@ -317,6 +326,47 @@
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -341,14 +391,16 @@
       <workItem from="1480202555262" duration="11453000" />
       <workItem from="1480219500854" duration="1620000" />
       <workItem from="1480925957021" duration="5607000" />
+      <workItem from="1481072603474" duration="887000" />
+      <workItem from="1481117595262" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46931000" />
+    <option name="totallyTimeSpent" value="51452000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1920" height="1004" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14955239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -357,7 +409,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24122807" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24065934" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -385,57 +437,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/assets/plugins/angular/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="323" selection-start-line="34" selection-start-column="323" selection-end-line="34" selection-end-column="323" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/plugins/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="4140" column="7" selection-start-line="4140" selection-start-column="7" selection-end-line="4140" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/table.html.haml" />
-    <entry file="file://$PROJECT_DIR$/source/assets/plugins/jquery-file-upload/js/jquery.fileupload-angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2355">
-          <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/doc.haml" />
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_tree.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_filter-nonselect.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_filter_withpage.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/widget/_modal_print.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -496,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -553,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="100" selection-start-line="3" selection-start-column="100" selection-end-line="3" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -606,7 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/views/dashboard/_VRV.haml">
+    <entry file="file://$PROJECT_DIR$/source/views/dashboard/_vrv.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -646,19 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/partials/_navbar.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/pages/DashboardController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="101" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="620" column="151" selection-start-line="620" selection-start-column="151" selection-end-line="620" selection-end-column="151" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,56 +656,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+    <entry file="file://$PROJECT_DIR$/source/views/pagination.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/application.haml">
+    <entry file="file://$PROJECT_DIR$/source/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <marker date="1480215452000" expanded="true" signature="167:235" placeholder="%link{:href =&gt; &quot;favicon.ico&quot;, :rel =&gt; &quot;icon&quot;, :type =&gt; &quot;image/ico&quot;}/" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/actions.js">
+    <entry file="file://$PROJECT_DIR$/build/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+        <state relative-caret-position="345">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/login.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="189">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/login.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="375">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/views/dashboard.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="120">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="164" column="56" selection-start-line="164" selection-start-column="56" selection-end-line="164" selection-end-column="56" />
+          <folding>
+            <marker date="1481117972000" expanded="true" signature="4146:4151" ph="{...}" />
+            <marker date="1481117972000" expanded="true" signature="5567:5571" ph="&lt;" />
+            <marker date="1481117972000" expanded="true" signature="5590:5594" ph="&lt;" />
+            <marker date="1481117972000" expanded="true" signature="5712:5716" ph="&lt;" />
+            <marker date="1481117972000" expanded="true" signature="5738:5742" ph="&lt;" />
+            <marker date="1481117972000" expanded="true" signature="9058:9075" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/basic-personnel.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/Index.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6210">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="0" column="17618" selection-start-line="0" selection-start-column="17618" selection-end-line="0" selection-end-column="17618" />
+          <folding>
+            <marker date="1481152121000" expanded="true" signature="1476:1518" ph="..." />
+            <marker date="1481152121000" expanded="true" signature="1609:1635" ph="..." />
+            <marker date="1481152121000" expanded="true" signature="5513:5555" ph="..." />
+            <marker date="1481152121000" expanded="true" signature="6270:6312" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/partials/_navbar.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="32" />
           <folding />
         </state>
       </provider>

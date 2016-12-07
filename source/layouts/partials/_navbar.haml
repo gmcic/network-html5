@@ -4,7 +4,7 @@
       %span.sr-only Toggle navigation
       %span.icon-reorder
     %a.navbar-brand{:href => "index.html"}
-      %img{:src => "assets/images/logo.png"}/
+      %img{:src => "assets/images/page-home-logo.png", :height => '28px'}/
 
   .collapse.navbar-collapse.navbar-ex1-collapse
     %ul.nav.navbar-nav
@@ -24,7 +24,8 @@
             %ul.dropdown-menu
               - header.menus.each do |menu|
                 %li
-                  %a{:href => "##{menu.uri}"} #{menu.name}
+                  -#%a{:href => "#{menu.uri}"} #{menu.name}
+                  %a{:href => "/views/index.html", :target=>"_blank"} #{menu.name}
 
     %form.navbar-form.navbar-right{:role => "search"}
       .form-group
