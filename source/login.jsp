@@ -56,7 +56,7 @@
                     <div class='input-group-addon'>
                       <span class='icon-user'></span>
                     </div>
-                    <input class='form-control' id='j_username' placeholder='帐号' type='text'>
+                    <input class='form-control' id='j_username' name="j_username" placeholder='帐号' type='text'>
                   </div>
                 </div>
               </div>
@@ -66,13 +66,13 @@
                     <div class='input-group-addon'>
                       <span class='icon-key'></span>
                     </div>
-                    <input class='form-control' id='jj_password' placeholder='密码' type='password'>
+                    <input class='form-control' id='jj_password' name="jj_password" placeholder='密码' type='password'>
                   </div>
                 </div>
               </div>
               <div class='form-row'>
                 <div class='col-md-6'>
-                  <button type='submit' class='btn btn-default btn-block btn-clean' onclick='submitUserName()' >登录</button>
+                  <button type='submit' class='btn btn-default btn-block btn-clean' onclick='submitUserName()' >登录1</button>
                 </div>
                 <div class='col-md-6'>
                   <button type='button'  class='btn btn-default btn-block btn-clean' onclick='closeWnd()' >关闭</button>
