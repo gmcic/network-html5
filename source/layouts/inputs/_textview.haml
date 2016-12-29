@@ -1,7 +1,7 @@
 -#查看文本框
 - $keyword = ((defined? keyword) ? keyword : @page_id)
 
-- fields = data["" << @module[$keyword] << "-" << $keyword].fields
+- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
 
 - $filter = (defined? filter) ? " | " << filter : ""
 

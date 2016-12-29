@@ -1,5 +1,5 @@
 -# portal_name, portal_id
-- @portal = data["" << @module[@portal_id] << "-" << @portal_id]
+- @portal = data["" << @module[@portal_id].bundle] ["" << @portal_id]
 
 / PORTLET {"ng": {"show": "!!#{@page_id}.id"}}
 .portlet.light.bordered

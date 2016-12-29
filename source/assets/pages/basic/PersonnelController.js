@@ -1,5 +1,5 @@
 // 员工管理
-angular.module('fiona').controller('PersonnelController', function ($scope, $http, commons, $controller) {
+angular.module('network').controller('PersonnelController', function ($scope, $http, commons, $controller) {
 
     // 声明要使用的下拉选项
     $scope.dropboxargs = {

@@ -1,4 +1,4 @@
-angular.module('fiona.services', [])
+angular.module('network.services', [])
 .filter("dropdown", function () {
     return function (name, comboxs) {
 
@@ -17,14 +17,6 @@ angular.module('fiona.services', [])
     };
 }).factory('commons', function() {
 
-    function formatnumber(num) {
-        if(num <= 9)
-        {
-            return "0" + num
-        }
-
-        return num;
-    };
     return {
         setAuthorization: function (auth) {
             // console.log( "保存用户凭证" + auth );
@@ -44,7 +36,7 @@ angular.module('fiona.services', [])
             return sessionStorage.getItem("authorization");
         },
         getBusinessHostname : function () {
-            return "http://localhost:8080/business";
+            return "http://localhost:8080/grab";
         },
         getAccountHostname : function () {
             return "http://localhost:8080/account";

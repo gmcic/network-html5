@@ -1,6 +1,6 @@
 - $keyword = ((defined? keyword) ? keyword : @page_id)
 
-- fields = data["" << @module[$keyword] << "-" << $keyword].fields
+- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
 
 - $required = ((defined? required) ? required : 'false')
 

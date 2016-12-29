@@ -1,4 +1,4 @@
-angular.module('fiona', ['ngRoute','fiona.services','blueimp.fileupload'])
+angular.module('network', ['ngRoute','network.services','blueimp.fileupload'])
     .config(['$routeProvider','$httpProvider', function($routeProvider,$httpProvider) {
        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 

@@ -1,6 +1,6 @@
 
 // 应用参数配置
-angular.module('fiona').controller('SettingController', function($scope, $http, commons) {
+angular.module('network').controller('SettingController', function($scope, $http, commons) {
 
     $http.defaults.headers.post.authorization = commons.getAuthorization();
 

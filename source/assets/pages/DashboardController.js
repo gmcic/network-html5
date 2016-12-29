@@ -1,17 +1,42 @@
 
 // 角色管理
-angular.module('fiona').controller('DashboardController', function($scope, $http, commons) {
+angular.module('network').controller('DashboardController', function($scope, $controller, $http, commons) {
+
+    $scope.dropdowns = {};
+
+    $controller('BaseController', {$scope: $scope}); //继承
+
+    /**
+     * 公告管理
+     * ---------------------------
+     * */
+    $scope.noticeportal = {
+
+      id: "notice",
+
+      name: "支出管理",
+
+      server: "/api/v2/financesettleaccountss",
+
+      defilters: { "personCode": "员工编号", "personName": "员工名称 "},
+
+      callback: {}
+    };
+
+    $controller('BaseCRUDController', {$scope: $scope, component: $scope.noticeportal}); //继承
+
+
 
     // 公告
     $scope.notices = [
-        {date: '11-25', time: '16:26:21', type: '调度公告', text: '关于各公司门户帐号弱口令公示及调整的通知', dept: '信息调度监控室', enable: true},
-        {date: '11-25', time: '16:26:21', type: '调度公告', text: '关于核实工修正I6000中机房建筑场地可用面积的通知', dept: '信息调度监控室', enable: true},
-        {date: '11-25', time: '16:26:21', type: '调度公告', text: '护网期间公告-以此为准!', dept: '信息调度监控室', enable: false},
-        {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
-        {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
-        {date: '11-25', time: '16:26:21', type: '调度公告', text: '护网期间公告-以此为准!', dept: '信息调度监控室', enable: false},
-        {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
-        {date: '11-25', time: '16:26:21', type: '文件通知', text: '各地市公司开通省公司供电指挥平台应用服务补充通知', dept: '平台运检组', enable: true}
+          {date: '11-25', time: '16:26:21', type: '调度公告', text: '关于各公司门户帐号弱口令公示及调整的通知', dept: '信息调度监控室', enable: true},
+          {date: '11-25', time: '16:26:21', type: '调度公告', text: '关于核实工修正I6000中机房建筑场地可用面积的通知', dept: '信息调度监控室', enable: true},
+          {date: '11-25', time: '16:26:21', type: '调度公告', text: '护网期间公告-以此为准!', dept: '信息调度监控室', enable: false},
+          {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
+          {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
+          {date: '11-25', time: '16:26:21', type: '调度公告', text: '护网期间公告-以此为准!', dept: '信息调度监控室', enable: false},
+          {date: '11-25', time: '16:26:21', type: '文件通知', text: '关于口令设备要求的能和', dept: '信息调度监控室', enable: true},
+          {date: '11-25', time: '16:26:21', type: '文件通知', text: '各地市公司开通省公司供电指挥平台应用服务补充通知', dept: '平台运检组', enable: true}
         ];
 
     // VRV
@@ -568,4 +593,5 @@ angular.module('fiona').controller('DashboardController', function($scope, $http
 
     });
 
+  $scope.noticeportal.filter();
 });

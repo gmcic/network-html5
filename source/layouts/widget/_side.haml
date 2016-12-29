@@ -2,7 +2,7 @@
 
 - @portal_name = @portal_name || @page_title
 
-- @portal = data["" << @module[@portal_id] << "-" << @portal_id]
+- @portal = data["" << @module[@portal_id].bundle] ["" << @portal_id]
 
 - _lightStyle = (((defined? light) && light == 'none') ? "portlet" : 'portlet light bordered')
 

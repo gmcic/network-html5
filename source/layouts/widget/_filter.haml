@@ -6,7 +6,7 @@
 
 - @portal_prefix = @module[@portal_id]
 
-- @portal = data["" << @module[@portal_id] << "-" << @portal_id]
+- @portal = data["" << @module[@portal_id].bundle] ["" << @portal_id]
 
 %div
   .input-group

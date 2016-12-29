@@ -4,7 +4,7 @@
   session.setMaxInactiveInterval(-1);
 %>
 <!DOCTYPE html>
-<html lang='en' ng-app='fiona'>
+<html lang='en' ng-app='network'>
   <head>
     <title>UICS信息通信一体化管理平台</title>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>

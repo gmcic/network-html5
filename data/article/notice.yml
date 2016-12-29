@@ -1,0 +1,11 @@
+# 公告管理
+listFields:
+  - fieldName: 员工姓名
+
+searchFields:
+  - fieldName: 员工姓名
+
+  - fieldName: ---
+
+fields: #可定义多个中文名称指向同一个字段
+  主键: id

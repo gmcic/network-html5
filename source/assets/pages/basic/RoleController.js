@@ -1,6 +1,5 @@
-
 // 角色管理
-angular.module('fiona').controller('RoleController', function($scope, $http, commons) {
+angular.module('network').controller('RoleController', function($scope, $http, commons) {
 
     $http.defaults.headers.post.authorization = commons.getAuthorization();
 

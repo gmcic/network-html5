@@ -1,5 +1,5 @@
 // 商品与服务管理
-angular.module('fiona').controller('ProductController', function ($scope, $controller, $http, commons) {
+angular.module('network').controller('ProductController', function ($scope, $controller, $http, commons) {
 
     // 声明要使用的下拉选项
     $scope.dropboxargs = {

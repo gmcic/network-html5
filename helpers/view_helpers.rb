@@ -7,9 +7,9 @@ module ViewHelpers
 
     @page_title = title;
 
-    @page_prefix = @module[@page_id]
+    @page_prefix = @module[@page_id].bundle
 
-    @page = data["" << @page_prefix << "-" << @page_id]
+    @page = data["" << @page_prefix]["" << @page_id]
 
     @fields = @page.fields
 

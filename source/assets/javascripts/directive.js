@@ -1,5 +1,5 @@
 // 指令
-angular.module('fiona')
+angular.module('network')
 
     // 搜索Bar
     .directive('faFilter', function () {
