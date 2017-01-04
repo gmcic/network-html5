@@ -1,0 +1,10 @@
+- locals['label'] = ((defined? label) ? label: "提交表单")
+
+- locals['icon'] = ((defined? icon) ? icon: "fa-search")
+
+- locals['btnType'] = "button"
+
+-#info|primary|warning|danger
+- locals['theme'] = "danger"
+
+= partial 'layouts/buttons/btn_pattern', :locals => locals

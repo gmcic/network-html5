@@ -9,12 +9,11 @@
 - @portal = data["" << @module[@portal_id].bundle] ["" << @portal_id]
 
 %form.form-inline{:role => "form", :name => "paginationform", :novalidate => "", "ng-submit" => "#{$portal_object}.jump()"}
-
-  .block-pagination
+  .form-group
     %button.btn.btn-sm.default.prev{:type => 'button', 'ng' => {'disabled': "#{$portal_object}.pagination.first==true", 'click': "#{$portal_object}.prevpage()"}}
       %i.fa.fa-angle-left
 
-    %input.pagination-panel-input.form-control.input-sm.input-inline.input-mini{:type => "text", :size =>'3', :maxlenght => "5", :style => "text-align:center; margin: 0 5px;", 'ng' => {'model': "#{$portal_object}.pagination.pageNumber"}}/
+    %input.pagination-panel-input.form-control.input-sm.input-inline.input-mini{:type => "text", :maxlenght => "5", :style => "text-align:center; margin: 0 5px;", 'ng' => {'model': "#{$portal_object}.pagination.pageNumber"}}/
 
     %button.btn.btn-sm.default.next{:type => 'button', 'ng' => {'disabled': "#{$portal_object}.pagination.last==true", 'click': "#{$portal_object}.nextpage()" }}
       %i.fa.fa-angle-right
@@ -31,5 +30,5 @@
 
     条
 
-    %button.btn{:type => "submit"} 跳转
+  %button.btn.btn-default{:type => "submit"} 跳转
 

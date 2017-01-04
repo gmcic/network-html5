@@ -30,7 +30,6 @@
             %li
               %a{:href => "javascript:;", 'ng-click' => "#{$portal_object}.setField('#{@fields[field.fieldName] || 'error'}', '#{field.fieldName}')" } #{field.fieldName}
 
-
     %input.form-control{:type => "text", :placeholder => "{{#{$portal_object}.searchbar.firstTextPlaceholder}}", "ng":{ 'model':"#{$portal_object}.searchbar.firstValue", "readonly"=>"#{$portal_object}.searchbar.dataType == 'date'" }}/
 
     .input-group-btn{"ng": {"show"=>"#{$portal_object}.searchbar.dataType == 'date'"}}
@@ -45,4 +44,4 @@
 
     .input-group-btn
       %button.btn.green.input-circle-right{"ng-click"=>"#{$portal_object}.filter()"}
-        %i.icon-search
+        %i.fa.fa-search

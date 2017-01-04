@@ -6,6 +6,24 @@
   controller: DashboardController
   template: /dashboard.html
 
+- name: 首页栏目
+  icon: fa fa-home
+  prefix: /app
+  uri: javascript:;
+  menus:
+    - name: 公告管理
+      icon: fa fa-stethoscope
+      controller: NotificationController
+      uri: /notification
+      template: /notification/notification_list.html
+
+    - name: 待办事项
+      icon: fa fa-stethoscope
+      controller: TodoController
+      uri: /todo
+      template: /todo/todo_list.html
+
+
 #桌面管理
 - name: 桌面管理
   icon: fa fa-desktop

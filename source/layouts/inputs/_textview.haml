@@ -1,29 +1,32 @@
--#查看文本框
-- $keyword = ((defined? keyword) ? keyword : @page_id)
+- locals['keyword'] = ((defined? keyword) ? keyword : @page_id)
 
-- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+- locals['inputType'] = "view"
 
-- $filter = (defined? filter) ? " | " << filter : ""
+= partial 'layouts/inputs/form_control_pattern', :locals => locals
 
-- fieldKey = (defined? fieldKey) ? fieldKey : nil
-
-- if defined? labelName
-  - $ngModel = inputModel($keyword, (fieldKey || fields[fieldName] || 'error') + "." + labelName)
-
-- else
-  - $ngModel = inputModel($keyword, (fieldKey || fields[fieldName] || 'error'))
-
-- if defined? cols
-  - $cols = cols.split
-  %label.control-label{:for => "form_control_1", :class => "col-md-#{$cols[0]}"}
-    #{fieldName} #{@formIdName}
-
-  %div{:class => "col-md-#{$cols[1]}"}
-    %input.form-control{:type => "text", "value"=>"{{#{$ngModel}#{$filter}}}" , "readonly" => "true"}/
-
-- else
-  .form-group.form-md-line-input
-    %label.control-label
-      #{fieldName} #{@formIdName}
-
-    %input.form-control{:type => "text", "value"=>"{{#{$ngModel}#{$filter}}}" , "readonly" => "true"}/
+-#
+-#-#查看文本框
+-#- $keyword = ((defined? keyword) ? keyword : @page_id)
+-#
+-#- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+-#
+-#- if defined? labelName
+-#  - $ngModel = inputModel($keyword, (fields[fieldName] || 'error') + "." + labelName)
+-#
+-#- if !(defined? labelName)
+-#  - $ngModel = inputModel($keyword, (fields[fieldName] || 'error'))
+-#
+-#- if defined? cols
+-#  - $cols = cols.split
+-#  %label.control-label{:for => "form_control_1", :class => "col-md-#{$cols[0]}"}
+-#    #{fieldName} #{@formIdName}
+-#
+-#  %div{:class => "col-md-#{$cols[1]}"}
+-#    %input.form-control{:type => "text", "ng-model"=>"#{$ngModel}" , "readonly" => "true"}/
+-#
+-#- else
+-#  .form-group.form-md-line-input
+-#    %label.control-label
+-#      #{fieldName} #{@formIdName}
+-#
+-#    %input.form-control{:type => "text", "ng-model"=>"#{$ngModel}" , "readonly" => "true"}/

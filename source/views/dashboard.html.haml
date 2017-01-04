@@ -137,47 +137,46 @@
           .head.bg-default.bg-light-rtl
             %h2 公告
             .side.pull-right
-              %ul.buttons
-                %li
-                  %a{:href => "#"}
-                    %span.icon-plus
-                %li
-                  %a{:href => "#"}
-                    %span.icon-cogs
+              %a.hp-info.hp-one.tip{:href => "javascript:;", :title => "刷新公告", "ng-click" => 'notificationportal.dash()'}
+                %span.icon-refresh
+                %span {{notificationlasttime}}
+              -#%ul.buttons
+              -#  %li
+              -#    %a{:href => "#"}
+              -#      %span.icon-plus
+              -#  %li
+              -#    %a{:href => "#"}
+              -#      %span.icon-cogs
             .head-panel.nm
-              %a.hp-info.pull-left{:href => "#"}
-                .hp-icon
-                  %span.icon-download-alt
-                %span.hp-main 25
-                %span.hp-sm 接收
-              %a.hp-info.pull-left{:href => "#"}
-                .hp-icon
-                  %span.icon-upload-alt
-                %span.hp-main 10
-                %span.hp-sm 发布
-              %a.hp-info.hp-one.pull-right.tip{:href => "#", :title => "Refresh"}
-                .hp-icon
-                  %span.icon-refresh
-                %span.hp-main 9:24 上午
+              -#%a.hp-info.pull-left{:href => "#"}
+              -#  .hp-icon
+              -#    %span.icon-download-alt
+              -#  %span.hp-main 25
+              -#  %span.hp-sm 接收
+              -#%a.hp-info.pull-left{:href => "#"}
+              -#  .hp-icon
+              -#    %span.icon-upload-alt
+              -#  %span.hp-main 10
+              -#  %span.hp-sm 发布
 
           .content.list
-            .list-item{"ng-repeat" => "notice in notices"}
+            .list-item{"ng-repeat" => "dashnotification in dashnotifications"}
               .list-datetime
-                .date {{notice.date}}
-                .time {{notice.time}}
+                .date {{dashnotification.date}}
+                .time {{dashnotification.time}}
               -#.list-info
               -#  %img.img-circle.img-thumbnail{:src => "assets/images/example/user/dmitry.jpg"}/
               .list-text
-                %label.label.label-success.pull-right{"ng-if" => "notice.enable"} 有效
-                %label.label.label-danger.pull-right{"ng-if" => "!notice.enable"} 无效
+                %label.label.label-success.pull-right{"ng-if" => "dashnotification.valid == '是'"} 有效
+                %label.label.label-danger.pull-right{"ng-if" => "dashnotification.valid == '否'"} 无效
                 %a.list-text-name{:href => "#"}
-                  {{notice.type}}
-                  %small ({{notice.dept}})
+                  {{dashnotification.dashnotificationType}}
+                  %small ({{dashnotification.releaseUnit}})
 
-                %p {{notice.text}}
+                %p {{dashnotification.title}} {{dashnotification.valid}}
 
           .footer.tac
-            %a{:href => "#"} 查看更多公告...
+            %a{:href => "javascript:;", "ng-click" => "notificationportal.mores()"} 查看更多公告...
 
 
       .col-md-6
@@ -201,23 +200,20 @@
           .header
             %h2 待办事项
             .side.pull-right
-              %ul.buttons
-                %li
-                  %a{:href => "#"}
-                    %span.icon-user
-                %li
-                  %a{:href => "#"}
-                    %span.icon-cogs
+              %a.hp-info.hp-one.tip{:href => "javascript:;", :title => "刷新待办事项", "ng-click" => 'todoportal.dash()'}
+                %span.icon-refresh
+                %span {{todolasttime}}
+
           .content.messages.npr.npb
-            .messages-item{"ng-repeat" => "todo in todolists"}
+            .messages-item{"ng-repeat" => "dashtodo in dashtodos"}
               %div{:style => "margin-bottom: 5px"}
-                .messages-item-date.pull-right {{todo.time}}
+                .messages-item-date.pull-right {{dashtodo.lastRefreshDate| date:"yyyy年MM月dd日"}}
                 %a.widget-icon{:href => "#none"}
                   %span.icon-tasks
 
-                %b {{todo.type}}
+                %b {{dashtodo.todoType}}
 
-              .messages-item-text{"style" => "margin-left: 20px;"} {{todo.title}}
+              .messages-item-text{"style" => "margin-left: 20px;"} {{dashtodo.title}}
 
 
 .row
@@ -225,3 +221,9 @@
     .page-footer-wrap
       .side.pull-left
         Copyirght &amp;COPY; YourCompany 2013. All rights reserved.
+
+/ Modal
+- modal '公告管理', 'notification'
+- portal '公告管理', 'notification'
+= partial :'layouts/modal/modal-lg' , :locals => {:selected => "true"} do
+  = partial 'dashboard/notice_pages'

@@ -1,4 +1,4 @@
-angular.module('network.services', [])
+angular.module('app.services', [])
 .filter("dropdown", function () {
     return function (name, comboxs) {
 
@@ -15,7 +15,7 @@ angular.module('network.services', [])
 
         return value;
     };
-}).factory('commons', function() {
+}).factory('commonService', function() {
 
     return {
         setAuthorization: function (auth) {
@@ -36,10 +36,10 @@ angular.module('network.services', [])
             return sessionStorage.getItem("authorization");
         },
         getBusinessHostname : function () {
-            return "http://localhost:8080/grab";
+            return "http://192.168.0.108:8080/grab";
         },
         getAccountHostname : function () {
-            return "http://localhost:8080/account";
+            return "http://192.168.0.108:8080/account";
         },
         modaldanger: function (alert_id, msg) {
             App.alert({

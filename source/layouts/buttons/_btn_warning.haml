@@ -1,25 +1,10 @@
-- $click = ((defined? click) ? click: "warning()")
+- locals['label'] = ((defined? label) ? label: "提交表单")
 
-- $label = ((defined? label) ? label: "Warning")
+- locals['icon'] = ((defined? icon) ? icon: "fa-search")
 
-- $icon = ((defined? icon) ? icon: "fa-warning")
+- locals['btnType'] = "button"
 
-- if (defined? disabled) && (defined? show)
-  %button.btn.btn-circle.btn-warning.btn-sm{:type => "button", 'ng': {'click':"#{$click}", 'disabled': "#{disabled}", 'show': "#{show}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+-#info|primary|warning|danger
+- locals['theme'] = "btn-warning"
 
-- elsif defined? disabled
-  %button.btn.btn-circle.btn-warning.btn-sm{:type => "button", 'ng': {'click':"#{$click}", 'disabled': "#{disabled}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
-
-- elsif defined? show
-  %button.btn.btn-circle.btn-warning.btn-sm{:type => "button", 'ng': {'click':"#{$click}", 'show': "#{show}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
-
-- else
-  %button.btn.btn-circle.btn-warning.btn-sm{:type => "button", 'ng': {'click':"#{$click}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+= partial 'layouts/buttons/btn_pattern', :locals => locals

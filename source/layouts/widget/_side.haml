@@ -4,10 +4,7 @@
 
 - @portal = data["" << @module[@portal_id].bundle] ["" << @portal_id]
 
-- _lightStyle = (((defined? light) && light == 'none') ? "portlet" : 'portlet light bordered')
-
-// portlet.light.bordered
-%div{:class => "#{_lightStyle}"}
+.portlet.light.bordered
   - if (!defined? modal_header) || modal_header != "none"
     .portlet-title
       - if (!defined? modal_caption) || modal_caption != "none"

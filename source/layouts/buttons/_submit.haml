@@ -1,22 +1,9 @@
-- $label = ((defined? label) ? label: "保存表单")
-- $icon = ((defined? icon) ? icon: "fa-plus")
+- locals['label'] = ((defined? label) ? label: "保存表单")
 
-- if (defined? disabled) && (defined? show)
-  %button.btn.btn-primary{:type => "submit", "ng": {"disabled": "#{disabled}", "show": "#{show}" }}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+- locals['icon'] = ((defined? icon) ? icon: "fa-save")
 
-- elsif defined? disabled
-  %button.btn.btn-primary{:type => "submit", "ng": {"disabled": "#{disabled}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+- locals['btnType'] = "submit"
 
-- elsif defined? show
-  %button.btn.btn-primary{:type => "submit", "ng": {"show": "#{show}" }}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+- locals['theme'] = "btn-primary"
 
-- else
-  %button.btn.btn-primary{:type => "submit"}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+= partial 'layouts/buttons/btn_pattern', :locals => locals

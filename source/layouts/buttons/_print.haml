@@ -1,10 +1,7 @@
-- if !defined? label
-  - locals['label'] = "打印"
+- locals['label'] = ((defined? label) ? label: "打印")
 
-- if !defined? icon
-  - locals['icon'] = "fa-print"
+- locals['icon'] = ((defined? icon) ? icon: "fa-warning")
 
-- if !defined? click
-  - locals['click'] = "print()"
+- locals['btnType'] = "button"
 
-= partial :'layouts/buttons/btn', :locals => locals
+= partial 'layouts/buttons/btn_pattern', :locals => locals

@@ -1,44 +1,58 @@
-- $keyword = ((defined? keyword) ? keyword : @page_id)
+- _keyword = ((defined? keyword) ? keyword : @page_id)
 
-- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+- _inputType = "text";
 
-- $required = ((defined? required) ? required : 'false')
+- locals['keyword'] = _keyword
 
-- $btnName = ((defined? btnname) ? btnname: '选择')
+- locals['inputType'] = _inputType
 
-- $btnClick = btnclick
+- locals['btnName'] = ((defined? btnname) ? btnname: '选择')
 
-- $columnName = inputName($keyword, (fields[fieldName] || 'error'))
+- locals['btnClick'] = btnclick
 
-- $ngModel = inputModel($keyword, (fields[fieldName] || 'error'))
+= partial 'layouts/inputs/form_control_pattern', :locals => locals
 
-- $maxlength = ((defined? maxlength) ? maxlength : '32')
-
--#.col-md-3
--#  .textbtn-form
--#    .input-cont
--#      %input.form-control{:placeholder => "Type a message here...", :type => "text"}/
--#    .btn-cont
--#      %span.arrow
--#      %a.btn.blue.icn-only{:href => ""}
--#        %i.fa.fa-check.icon-white
-
-
-.form-group
-  %label.control-label
-    #{fieldName} #{@formIdName}
-    - if $required == 'true'
-      %span.required *
-
-  .input-group
-    - if $required == 'true'
-      %input.form-control{:type => "text", :maxlength => "#{$maxlength}", :required => "#{$required}" ,:name => "#{$columnName}", "ng-model"=>"#{$ngModel}" }/
-
-    - if $required == 'false'
-      %input.form-control{:type => "text", :maxlength => "#{$maxlength}", :name => "#{$columnName}", "ng-model"=>"#{$ngModel}" }/
-
-    %span.input-group-btn
-      %button.btn.btn-primary{:type => "button", "ng" => {'click' => "#{$btnClick}"}} #{$btnName}
-
-  - if $required == 'true'
-    %p.help-block.font-red-thunderbird{"ng-show" => "#{validrequired($keyword, (fields[fieldName] || 'error'))}"} #{fieldName}不能为空.
+-#- $keyword = ((defined? keyword) ? keyword : @page_id)
+-#
+-#- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+-#
+-#- $required = ((defined? required) ? required : 'false')
+-#
+-#- $btnName = ((defined? btnname) ? btnname: '选择')
+-#
+-#- $btnClick = btnclick
+-#
+-#- $columnName = inputName($keyword, (fields[fieldName] || 'error'))
+-#
+-#- $ngModel = inputModel($keyword, (fields[fieldName] || 'error'))
+-#
+-#- $maxlength = ((defined? maxlength) ? maxlength : '32')
+-#
+-#-#.col-md-3
+-#-#  .textbtn-form
+-#-#    .input-cont
+-#-#      %input.form-control{:placeholder => "Type a message here...", :type => "text"}/
+-#-#    .btn-cont
+-#-#      %span.arrow
+-#-#      %a.btn.blue.icn-only{:href => ""}
+-#-#        %i.fa.fa-check.icon-white
+-#
+-#
+-#.form-group
+-#  %label.control-label
+-#    #{fieldName} #{@formIdName}
+-#    - if $required == 'true'
+-#      %span.required *
+-#
+-#  .input-group
+-#    - if $required == 'true'
+-#      %input.form-control{:type => "text", :maxlength => "#{$maxlength}", :required => "#{$required}" ,:name => "#{$columnName}", "ng-model"=>"#{$ngModel}" }/
+-#
+-#    - if $required == 'false'
+-#      %input.form-control{:type => "text", :maxlength => "#{$maxlength}", :name => "#{$columnName}", "ng-model"=>"#{$ngModel}" }/
+-#
+-#    %span.input-group-btn
+-#      %button.btn.btn-primary{:type => "button", "ng" => {'click' => "#{$btnClick}"}} #{$btnName}
+-#
+-#  - if $required == 'true'
+-#    %p.help-block.font-red-thunderbird{"ng-show" => "#{validrequired($keyword, (fields[fieldName] || 'error'))}"} #{fieldName}不能为空.

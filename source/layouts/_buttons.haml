@@ -1,0 +1,32 @@
+- if moduleId == 'nothing'
+
+- elsif moduleId == 'nothing'
+
+- else
+  - if purpose == 'portal.outline'
+    -# 列表外层按钮
+    = partial :'layouts/buttons/insert', :locals => {:onclick => "#{moduleId}portal.insert()", :purpose => "outline"}
+    = partial :'layouts/buttons/removes', :locals => {:onclick => "#{moduleId}portal.removes()", :disabled => "#{moduleId}portal.isRemoves", :purpose => "outline"}
+
+  - elsif purpose == "portal.inline"
+    -# 列表行级按钮
+    = partial :'layouts/buttons/btn', :locals => {:label => "查看", :icon => "fa-wpforms", :onclick => "#{moduleId}portal.view(#{moduleId}.id)", :purpose => "inline"}
+    = partial :'layouts/buttons/update', :locals => {:onclick => "#{moduleId}portal.update(#{moduleId}.id)", :purpose => "inline"}
+    = partial :'layouts/buttons/remove', :locals => {:onclick => "#{moduleId}portal.remove(#{moduleId})", :purpose => "inline"}
+
+  - elsif purpose == 'modal' || purpose == 'modal'
+    -# 弹出图层 (默认表单)
+    = partial :'layouts/buttons/btn', :locals => {:dismiss => "modal", :icon => "fa-close", :purpose => "modal", :label => '关闭'}
+    = partial :'layouts/buttons/submit', :locals => {:onclick => "#{moduleId}portal.submit()", :purpose => "modal"}
+
+  - elsif purpose == 'modal' || purpose == 'modal.selected'
+    -# Modal (选择)
+    = partial :'layouts/buttons/btn', :locals => {:dismiss => "modal", :icon => "fa-close",  :purpose => "modal", :label => '关闭'}
+    = partial :'layouts/buttons/submit', :locals => {:onclick => "#{moduleId}portal.submit()", :purpose => "modal"}
+
+  - elsif purpose == 'modal.printer'
+    -#Modal (打印)
+    -#%button.btn.grey-mint.btn-outline{"data-dismiss" => "modal", :type => "button"} 关闭
+    = partial :'layouts/buttons/btn', :locals => {:dismiss => "modal", :icon => "fa-close", :purpose => "modal", :label => '关闭'}
+    = partial :'layouts/buttons/print', :locals => {:onclick => "print()", :purpose => "modal", :label => '打印'}
+

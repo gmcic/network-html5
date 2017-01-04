@@ -1,23 +1,34 @@
-- $keyword = ((defined? keyword) ? keyword : @page_id)
+- _keyword = ((defined? keyword) ? keyword : @page_id)
 
-- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+- _inputType = "textarea";
 
-- $required = ((defined? required) ? required : 'false')
+- locals['keyword'] = _keyword
 
-- $columnName = inputName($keyword, (fields[fieldName] || 'error'))
+- locals['inputType'] = _inputType
 
-- $ngModel = inputModel($keyword, (fields[fieldName] || 'error'))
+= partial 'layouts/inputs/form_control_pattern', :locals => locals
 
-- $maxlength = ((defined? maxlength) ? maxlength : '32')
-
-.form-group
-  %label.control-label
-    #{fieldName}
-    - if $required == 'true'
-      %span.required *
-
-  - if $required == 'true'
-    %textarea.form-control{:type => "text", :maxlength => "#{$maxlength}", :required => "#{$required}" ,:name => "#{$columnName}",  "ng-model"=>"#{$ngModel}" }
-
-  - if $required == 'false'
-    %textarea.form-control{:type => "text", :maxlength => "#{$maxlength}", :name => "#{$columnName}",  "ng-model"=>"#{$ngModel}" }
+-#
+-#- $keyword = ((defined? keyword) ? keyword : @page_id)
+-#
+-#- fields = data["" << @module[$keyword].bundle]["" << $keyword].fields
+-#
+-#- $required = ((defined? required) ? required : 'false')
+-#
+-#- $columnName = inputName($keyword, (fields[fieldName] || 'error'))
+-#
+-#- $ngModel = inputModel($keyword, (fields[fieldName] || 'error'))
+-#
+-#- $maxlength = ((defined? maxlength) ? maxlength : '32')
+-#
+-#.form-group
+-#  %label.control-label
+-#    #{fieldName}
+-#    - if $required == 'true'
+-#      %span.required *
+-#
+-#  - if $required == 'true'
+-#    %textarea.form-control{:type => "text", :maxlength => "#{$maxlength}", :required => "#{$required}" ,:name => "#{$columnName}",  "ng-model"=>"#{$ngModel}" }
+-#
+-#  - if $required == 'false'
+-#    %textarea.form-control{:type => "text", :maxlength => "#{$maxlength}", :name => "#{$columnName}",  "ng-model"=>"#{$ngModel}" }

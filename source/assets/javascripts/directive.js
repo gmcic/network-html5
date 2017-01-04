@@ -1,5 +1,5 @@
 // 指令
-angular.module('network')
+angular.module('app')
 
     // 搜索Bar
     .directive('faFilter', function () {

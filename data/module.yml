@@ -4,6 +4,16 @@ dashboard:
   bundle: app
   server:
 
+notification:
+  name: 公告管管理
+  bundle: app
+  server: api/v2/idcsnotifications
+
+todo:
+  name: 待办事项
+  bundle: app
+  server: api/v2/idcstodos
+
 # 案例
 case:
   name: 公告管理

@@ -1,0 +1,25 @@
+module:
+  name: 公告管理
+  id: notification
+  data: api/v2/idcsnotifications
+
+listFields: # aliasName 显示使用, fieldName 关联字段使用,若显示名称与字段名称一致, 则不需要定义 aliasName
+  - fieldName: 员工姓名
+
+
+searchFields:
+  - fieldName: 员工姓名
+
+  - fieldName: ---
+
+
+fields: #可定义多个中文名称指向同一个字段
+  主键: id
+
+  代办ID: todoId
+
+  类型: todoType
+
+  标题: title
+
+  刷新时间: lastRefreshDate

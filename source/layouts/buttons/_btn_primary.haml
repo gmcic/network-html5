@@ -1,23 +1,10 @@
-- $click = ((defined? click) ? click: "submit()")
-- $label = ((defined? label) ? label: "保存表单")
-- $icon = ((defined? icon) ? icon: "fa-plus")
+- locals['label'] = ((defined? label) ? label: "提交表单")
 
-- if (defined? disabled) && (defined? show)
-  %button.btn.btn-primary{:type => "button", "ng": {'click':"#{$click}", "disabled": "#{disabled}", "show": "#{show}" }}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+- locals['icon'] = ((defined? icon) ? icon: "fa-search")
 
-- elsif defined? disabled
-  %button.btn.btn-primary{:type => "button", 'click':"#{$click}", "ng": {'click':"#{$click}", "disabled": "#{disabled}"}}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+- locals['btnType'] = "button"
 
-- elsif defined? show
-  %button.btn.btn-primary{:type => "button", 'click':"#{$click}", "ng": {'click':"#{$click}", "show": "#{show}" }}
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+-#info|primary|warning|danger
+- locals['theme'] = "btn-primary"
 
-- else
-  %button.btn.btn-primary{:type => "button", 'ng-click':"#{$click}" }
-    %i.fa{:class => "#{$icon}"}
-    #{$label}
+= partial 'layouts/buttons/btn_pattern', :locals => locals

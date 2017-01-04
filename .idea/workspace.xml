@@ -2,7 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02a1272-3ef6-4b84-887c-36ba4cd54af6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/app/todo.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/app/NotificationController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/app/TodoController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/javascripts/interceptors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/_buttons.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_danger.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_pattern.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/inputs/_form_control_pattern.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/inputs/_form_horizontal_control_pattern.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/modal/_modal-full.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/modal/_modal-lg.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/modal/_modal.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/modal/_modal_pattern.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/widget/_print_table_border.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/app/notification/_modify.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/app/notification/notification_list.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/app/todo/_modify.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/app/todo/todo_list.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/dashboard/_notice_pages.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_circle_primary.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_pruple.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/buttons/_rowremove.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/buttons/_rowupdate.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/inputs/_textline.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_filter-nonselect.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_filter.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_inbox.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-full.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-lg.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-body.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-full.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-lg.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-select-full.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-select-lg.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-select.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal-view-full.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal-portal.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/partials/_modal_toolbar.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/portal/_sideportal.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_portal.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_table.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_table_filter.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_table_full.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_table_pagefilter.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/table/_table_selected.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/widget/_modal_print.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/widget/_modal_print_xs.haml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/DashboardController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/api/CasesController.js.erb" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/api/filter.erb" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/filter.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/basic/PersonnelController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/PersonnelController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/basic/ProductController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/ProductController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/basic/RoleController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/RoleController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/assets/pages/basic/SettingController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/SettingController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/views/dashboard/_notice.haml" afterPath="$PROJECT_DIR$/data/app/notification.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/module.yml" afterPath="$PROJECT_DIR$/data/module.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sidebar.yml" afterPath="$PROJECT_DIR$/data/sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/BaseController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/BaseController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" afterPath="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/directive.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/services.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/application.haml" afterPath="$PROJECT_DIR$/source/layouts/application.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_find.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_find.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_info.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_info.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_primary.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_primary.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_btn_warning.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_btn_warning.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_insert.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_insert.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_print.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_print.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_remove.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_remove.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_removes.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_removes.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_submit.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_submit.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/buttons/_update.haml" afterPath="$PROJECT_DIR$/source/layouts/buttons/_update.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_date.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_date.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_double.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_double.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_email.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_email.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_money.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_money.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_number.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_number.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_select.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_select.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_selectview.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_selectview.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_text.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_text.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_text_btn.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_text_btn.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_textarea.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_textarea.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_textview.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_textview.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/inputs/_url.haml" afterPath="$PROJECT_DIR$/source/layouts/inputs/_url.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" afterPath="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/partials/_quicksidebar.haml" afterPath="$PROJECT_DIR$/source/layouts/partials/_quicksidebar.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/partials/_sidebar.haml" afterPath="$PROJECT_DIR$/source/layouts/partials/_sidebar.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/widget/_filter.haml" afterPath="$PROJECT_DIR$/source/layouts/widget/_filter.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/widget/_pagination.haml" afterPath="$PROJECT_DIR$/source/layouts/widget/_pagination.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/widget/_portal.haml" afterPath="$PROJECT_DIR$/source/layouts/widget/_portal.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/widget/_portal_table.haml" afterPath="$PROJECT_DIR$/source/layouts/widget/_portal_table.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/layouts/widget/_side.haml" afterPath="$PROJECT_DIR$/source/layouts/widget/_side.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/netview.jsp" afterPath="$PROJECT_DIR$/source/netview.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/views/dashboard.html.haml" afterPath="$PROJECT_DIR$/source/views/dashboard.html.haml" />
     </list>
     <ignored path="network-html5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,11 +118,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="module.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/module.yml">
+      <file leaf-file-name="_modal-lg.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal-lg.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="30">
+              <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -35,50 +131,90 @@
       <file leaf-file-name="dashboard.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/views/dashboard.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_helpers.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/view_helpers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/api/case.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="470">
+              <caret line="196" column="27" lean-forward="false" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DashboardController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/assets/pages/DashboardController.js">
+        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="520" column="43" lean-forward="true" selection-start-line="520" selection-start-column="43" selection-end-line="520" selection-end-column="43" />
+            <state relative-caret-position="283">
+              <caret line="432" column="85" lean-forward="true" selection-start-line="432" selection-start-column="85" selection-end-line="432" selection-end-column="85" />
               <folding>
-                <marker date="1482331233000" expanded="true" signature="23123:23245" ph="..." />
+                <marker date="1483516366000" expanded="true" signature="23499:23621" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/services.js">
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="200">
+              <caret line="147" column="12" lean-forward="true" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_modal_pattern.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal_pattern.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/BaseController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1">
+              <caret line="788" column="20" lean-forward="false" selection-start-line="788" selection-start-column="14" selection-end-line="788" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_portal_table.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal_table.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_portal.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_notice_pages.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/views/dashboard/_notice_pages.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="117" lean-forward="true" selection-start-line="2" selection-start-column="117" selection-end-line="2" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/app/notification.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,6 +227,20 @@
       <find>'fiona'</find>
       <find>- fields = data[&quot;&quot; &lt;&lt; @module[$keyword] &lt;&lt; &quot;-&quot; &lt;&lt; $keyword].fields</find>
       <find>data[&quot;&quot;</find>
+      <find>公告</find>
+      <find>待</find>
+      <find>network</find>
+      <find>commons</find>
+      <find>filter</find>
+      <find>BaseCRUDController</find>
+      <find>style</find>
+      <find>195</find>
+      <find>3</find>
+      <find>.block</find>
+      <find />
+      <find>h3c</find>
+      <find>dash_chart_1</find>
+      <find>dash_chart_3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,32 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/assets/javascripts/charts.js" />
-        <option value="$PROJECT_DIR$/source/views/dashboard/_user_info.haml" />
-        <option value="$PROJECT_DIR$/source/layouts/login.haml" />
-        <option value="$PROJECT_DIR$/source/views/dashboard.html.haml" />
-        <option value="$PROJECT_DIR$/source/assets/javascripts/actions.js" />
-        <option value="$PROJECT_DIR$/source/login.html.haml" />
-        <option value="$PROJECT_DIR$/build/login.jsp" />
-        <option value="$PROJECT_DIR$/source/login.jsp" />
-        <option value="$PROJECT_DIR$/data/sidebar.yml" />
-        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html.haml" />
-        <option value="$PROJECT_DIR$/source/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" />
-        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html" />
-        <option value="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
-        <option value="$PROJECT_DIR$/source/assets/pages/api/CasesController.js.erb" />
-        <option value="$PROJECT_DIR$/source/netview.jsp" />
-        <option value="$PROJECT_DIR$/source/assets/javascripts/BaseController.js" />
-        <option value="$PROJECT_DIR$/source/assets/javascripts/directive.js" />
-        <option value="$PROJECT_DIR$/source/assets/pages/basic/PersonnelController.js" />
-        <option value="$PROJECT_DIR$/source/assets/pages/basic/ProductController.js" />
-        <option value="$PROJECT_DIR$/source/assets/pages/basic/RoleController.js" />
-        <option value="$PROJECT_DIR$/source/assets/pages/basic/SettingController.js" />
-        <option value="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" />
-        <option value="$PROJECT_DIR$/source/layouts/application.haml" />
-        <option value="$PROJECT_DIR$/data/article/notice.yml" />
-        <option value="$PROJECT_DIR$/source/layouts/inputs/_date.haml" />
-        <option value="$PROJECT_DIR$/source/layouts/inputs/_double.haml" />
         <option value="$PROJECT_DIR$/source/layouts/inputs/_money.haml" />
         <option value="$PROJECT_DIR$/source/layouts/inputs/_email.haml" />
         <option value="$PROJECT_DIR$/source/layouts/inputs/_number.haml" />
@@ -142,14 +266,40 @@
         <option value="$PROJECT_DIR$/source/layouts/widget/_filter-nonselect.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_filter.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_pagination.haml" />
-        <option value="$PROJECT_DIR$/source/layouts/widget/_portal.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_portal_view.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_print_table.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_side.haml" />
-        <option value="$PROJECT_DIR$/data/module.yml" />
         <option value="$PROJECT_DIR$/helpers/view_helpers.rb" />
         <option value="$PROJECT_DIR$/source/assets/pages/DashboardController.js" />
+        <option value="$PROJECT_DIR$/source/views/app/notification/notification_list.haml" />
+        <option value="$PROJECT_DIR$/data/module.yml" />
+        <option value="$PROJECT_DIR$/source/views/app/todo/todo_list.html.haml" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/app/TodoController.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/app/NotificationController.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/BaseController.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/directive.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/ProductController.js" />
+        <option value="$PROJECT_DIR$/source/netview.jsp" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" />
+        <option value="$PROJECT_DIR$/source/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/RoleController.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/PersonnelController.js" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/SettingController.js" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/services.js" />
+        <option value="$PROJECT_DIR$/data/app/todo.yml" />
+        <option value="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
+        <option value="$PROJECT_DIR$/data/sidebar.yml" />
+        <option value="$PROJECT_DIR$/source/layouts/widget/_portal.haml" />
+        <option value="$PROJECT_DIR$/source/layouts/_buttons.haml" />
+        <option value="$PROJECT_DIR$/source/layouts/widget/_portal_table.haml" />
+        <option value="$PROJECT_DIR$/data/app/notification.yml" />
+        <option value="$PROJECT_DIR$/source/layouts/modal/_modal-lg.haml" />
+        <option value="$PROJECT_DIR$/source/views/dashboard/_notice_pages.haml" />
+        <option value="$PROJECT_DIR$/source/assets/stylesheets/stylesheet.css" />
+        <option value="$PROJECT_DIR$/source/layouts/modal/_modal_pattern.haml" />
+        <option value="$PROJECT_DIR$/source/views/dashboard.html.haml" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js" />
       </list>
     </option>
   </component>
@@ -218,7 +368,231 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,6 +610,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -244,25 +636,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../taurus-guides" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="common&#9;null&#9;null&#10;help&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/helpers/view_helpers.rb&#10;comm&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;basec&#9;null&#9;null&#10;dashbo&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;_nav&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
+    <property name="SearchEverywhereHistoryKey" value="appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/application.js.erb&#10;service&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/services.js&#10;base&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/BaseController.js&#10;DashboardController&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/controllers/app/DashboardController.js&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;dash&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;common&#9;null&#9;null&#10;help&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/helpers/view_helpers.rb&#10;comm&#9;null&#9;null&#10;basec&#9;null&#9;null&#10;dashbo&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;_nav&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/app" />
-      <recent name="$PROJECT_DIR$/source/views/history" />
-      <recent name="$PROJECT_DIR$/source/views/basic" />
-      <recent name="$PROJECT_DIR$/source/assets/plugins" />
-      <recent name="$PROJECT_DIR$/source/assets/javascripts/plugins/plupload/jquery.plupload.queue" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/source/layouts" />
       <recent name="$PROJECT_DIR$/data/basic" />
       <recent name="$PROJECT_DIR$/data/api" />
       <recent name="$PROJECT_DIR$/source" />
-      <recent name="$PROJECT_DIR$/source/views" />
-      <recent name="$PROJECT_DIR$/source/assets/plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers" />
+      <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers/basic" />
+      <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers/app" />
+      <recent name="$PROJECT_DIR$/data/app" />
+      <recent name="$PROJECT_DIR$/source/views/history" />
     </key>
   </component>
   <component name="RunManager">
@@ -354,33 +746,33 @@
       <workItem from="1481183187239" duration="446000" />
       <workItem from="1482327779536" duration="4908000" />
       <workItem from="1482973277648" duration="509000" />
-      <workItem from="1483238684995" duration="1061000" />
+      <workItem from="1483238684995" duration="12051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61418000" />
+    <option name="totallyTimeSpent" value="72408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="38" width="1846" height="989" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1030137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19890411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16833891" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26532888" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,269 +794,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/assets/pages/basic/RoleController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/netview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="331" column="7" lean-forward="false" selection-start-line="331" selection-start-column="7" selection-end-line="331" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/application.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/BaseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="82" column="2" lean-forward="true" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/pages/basic/PersonnelController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/api-case.yml" />
-    <entry file="file://$PROJECT_DIR$/data/api-index.yml" />
-    <entry file="file://$PROJECT_DIR$/data/article/notice.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1138">
-          <caret line="89" column="55" lean-forward="true" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/buttons/_btn.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/buttons/_btn_circle_primary.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/buttons/_btn_find.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/buttons/_rowupdate.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_money.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_email.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_number.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_url.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_textview.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="70" lean-forward="false" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_textline_btn.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_textline.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_textarea.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_text_btn.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_text.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_selectview.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_select.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/pages/api/CasesController.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/pages/api/filter.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_date.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_side.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="69" lean-forward="true" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_print_table.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal_view.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_pagination.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_filter.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_filter-nonselect.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/table/_portal.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/portal/_sideportal.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/inputs/_double.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -672,22 +801,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/app/dashboard.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/basic-producttype.yml" />
-    <entry file="file://$PROJECT_DIR$/source/views/dashboard.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/view_helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -713,28 +827,359 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/module2.yml" />
+    <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/buttons/_btn.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/app/notification/_modify.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/app/todo/_modify.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/app/todo/todo_list.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/dashboard/_todo.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/dashboard/_hardware.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/app/NotificationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/app/TodoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/module.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/ProductController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/plugins/jquery-mousewheel/test/browserify/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="8445" column="32" lean-forward="false" selection-start-line="8445" selection-start-column="32" selection-end-line="8445" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/interceptors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="84" column="78" lean-forward="true" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/RoleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/PersonnelController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/SettingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/netview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/javascripts/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/pages/DashboardController.js">
+    <entry file="file://$PROJECT_DIR$/source/assets/plugins/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="520" column="43" lean-forward="true" selection-start-line="520" selection-start-column="43" selection-end-line="520" selection-end-column="43" />
+        <state relative-caret-position="126">
+          <caret line="9833" column="8" lean-forward="true" selection-start-line="9833" selection-start-column="8" selection-end-line="9833" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/app/todo.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/app/notification/notification_list.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal-full.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/partials/_navbar.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/partials/_portlet.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/_buttons.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="115" lean-forward="true" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/app/dashboard.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal_table.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/BaseController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="788" column="20" lean-forward="false" selection-start-line="788" selection-start-column="14" selection-end-line="788" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/app/notification.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/stylesheets.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal-lg.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/widget/_portal.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="147" column="12" lean-forward="true" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/dashboard/_notice_pages.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="117" lean-forward="true" selection-start-line="2" selection-start-column="117" selection-end-line="2" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal_pattern.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/dashboard.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="196" column="27" lean-forward="false" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="432" column="85" lean-forward="true" selection-start-line="432" selection-start-column="85" selection-end-line="432" selection-end-column="85" />
           <folding>
-            <marker date="1482331233000" expanded="true" signature="23123:23245" ph="..." />
+            <marker date="1483516366000" expanded="true" signature="23499:23621" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,13 @@
+- h = Hash['outline' => 'btn btn-circle', 'inline' => 'btn btn-circle btn-sm', 'modal' => 'btn btn-outline']
+
+- if (defined? purpose)
+  - className = (h[purpose] || '') << ((defined? theme)? (" " << theme) : " btn-default")
+
+- else
+  - className = "btn #{(defined? circle)? " btn-#{circle}" : " btn-circle"}#{(defined? theme)? (" " << theme) : " btn-default"}#{(defined? size)? " btn-#{size}" : " btn-sm"}"
+
+:erb
+  <button type='<%=btnType%>' class='<%=className%>' <%=(defined? onclick)? ("ng-click='" << onclick << "'"): ""%> <%=(defined? show)? "ng-show='" << show << "'": ""%>  <%=(defined? disabled)? "ng-disabled='" << disabled << "'": ""%>  <%=(defined? dismiss)? "data-dismiss='modal'": ""%>  >
+    <i class='fa <%=icon%>' ></i>
+    <%=label%>
+  </button>

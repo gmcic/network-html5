@@ -1,0 +1,71 @@
+- _fields = data["" << @module[keyword].bundle]["" << keyword].fields
+
+- _columnKey = ((defined? fieldKey) ? fieldKey : _fields[fieldName]);
+
+- _columnName = inputName(keyword, (_columnKey || 'error'))
+
+- _ngModel = inputModel(keyword, (_columnKey || 'error'))
+
+- _required = ((defined? required) ? required : 'false')
+
+- _readonly = ((defined? readonly) ? readonly : 'false')
+
+- _maxlength = ((defined? maxlength) ? maxlength : '32')
+
+- _md = ((defined? md) ? md : '1 3')
+
+- _lg = ((defined? lg) ? lg : '1 3')
+
+- labelMD = " col-md-" << (_md.split)[0]
+
+- inputMD = " col-md-" << (_md.split)[1]
+
+- labelLG = " col-lg-" << (_lg.split)[0]
+
+- inputLG = " col-lg-" << (_lg.split)[1]
+
+- if inputType == 'view'
+  %label{:for => "form_control_1", :class => 'control-label#{labelMD}#{labelLG}'}
+    #{fieldName} #{@formIdName}
+
+  %div{:class => 'form-md-line-input#{inputMD}#{inputLG}'}
+    :erb
+      <input type='text' ng-model='<%=_ngModel%>' readonly="true" class='form-control' />
+
+- else
+  %label{:for => "form_control_1", :class => 'control-label#{labelMD}#{labelLG}'}
+    #{fieldName} #{@formIdName}
+    - if _required == 'true'
+      %span.required *
+
+  %div{:class => '#{inputMD}#{inputLG}'}
+    - if defined? $btnName
+      .input-group
+        :erb
+          <input type='<%=inputType%>' name='<%=_columnName%>'  ng-model='<%=_ngModel%>' maxlength='<%=_maxlength%>' <%=(_required == 'true')?" required='true' ":""%> <%=(_readonly == 'true')?" readonly ":""%> class='form-control' />
+
+        %span.input-group-btn
+          %button.btn.btn-primary{:type => "button", "ng" => {'click' => "#{$btnClick}"}} #{$btnName}
+
+    - elsif inputType == 'textarea'
+      :erb
+        <textarea name='<%=_columnName%>' ng-model='<%=_ngModel%>' maxlength='<%=_maxlength%>' <%=(_required == 'true')?" required='true' ":""%>  class='form-control' ></textarea>
+
+    - elsif inputType == 'select'
+      :erb
+        <select name='<%=_columnName%>' ng-model='<%=_ngModel%>' ng-options="<%=(defined? options) ? options : ('_' << _columnKey << '.' <<  ((defined? optionKey)? optionKey : 'id') <<  ' as _' << _columnKey << '.' << ((defined? optionName)? optionKey : 'name') <<  ' for _' <<  _columnKey << ' in dropdowns.' << _columnKey << 'Set') %>" <%=(defined? onchange)? "ng-change='" << onchange << "'" :""%> class='form-control' ></select>
+
+    - elsif inputType == 'date'
+      .input-icon.right
+        %i.fa.fa-calendar
+        :erb
+          <input type='text' name='<%=_columnName%>'  ng-model='<%=_ngModel%>' maxlength='<%=_maxlength%>' <%=(_required == 'true')?" required='true' ":""%> <%=(_readonly == 'true')?" readonly ":""%> class='form-control date-picker' />
+
+    - else
+      :erb
+        <input type='<%=inputType%>' name='<%=_columnName%>'  ng-model='<%=_ngModel%>' maxlength='<%=_maxlength%>' <%=(_required == 'true')?" required='true' ":""%>  class='form-control' />
+
+    - if _required == 'true'
+      %p.help-block.font-red-thunderbird{"ng-show" => "#{validrequired(keyword, (_columnKey || 'error'))}"} #{fieldName}不能为空.
+
+    %p.help-block.font-red-thunderbird{"ng-show" => "#{validmaxlength(keyword, (_columnKey || 'error'))}"} #{fieldName} 超过最大长度

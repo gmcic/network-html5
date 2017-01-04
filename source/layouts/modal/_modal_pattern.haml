@@ -1,0 +1,55 @@
+- @modal_id = @modal_id || @page_id
+
+- @modal_name = @modal_name || @page_title
+
+- h = Hash['full' => 'modal-full', 'lg' => 'modal-lg', 'md' => '']
+
+.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1", :id => "#{@modal_id}"}
+  %div{:class => "modal-dialog #{(h[((defined? size)? size: 'md')] || '')}"}
+    .modal-content
+      - if (defined? selected)
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+          %h4.modal-title #{@modal_name} 1
+
+        .modal-body
+          %div{:id => "#{@modal_id}_alert"}
+          = yield
+
+        .modal-footer
+          - if (defined? readonly)
+            %button.btn.grey-mint.btn-outline{"data-dismiss" => "modal", :type => "button"} 关闭
+          - else
+            = partial :'layouts/buttons', :locals => {:moduleId => @modal_id, :funcode => ((defined? funcode)? funcode: ''), :purpose => "modal.selected" }
+
+      - elsif (defined? printer)
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+          %h4.modal-title #{@modal_name} 2
+
+        .modal-body
+          .div{:id => "#{@modal_id}printbody"}
+            =yield
+          %iframe#printiframe.hide{:frameborder => '0', :src => "#{print}", :style => "width:0px;height:0px"}
+
+        .modal-footer
+          - if (defined? readonly)
+            %button.btn.grey-mint.btn-outline{"data-dismiss" => "modal", :type => "button"} 关闭
+          - else
+            = partial :'layouts/buttons', :locals => {:moduleId => @modal_id, :funcode => ((defined? funcode)? funcode: ''), :purpose => "modal.printer" }
+
+      - else
+        %form{:id => "#{@modal_id}form", :name => "#{@modal_id}form", :novalidate => "", "ng-submit" => "#{@modal_id}portal.submit()", :role => "form"}
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+            %h4.modal-title #{@modal_name}
+
+          .modal-body
+            %div{:id => "#{@modal_id}_alert"}
+            = yield
+
+          .modal-footer
+            - if (defined? readonly)
+              %button.btn.grey-mint.btn-outline{"data-dismiss" => "modal", :type => "button"} 关闭
+            - else
+              = partial :'layouts/buttons', :locals => {:moduleId => @modal_id, :funcode => ((defined? funcode)? funcode: ''), :purpose => "modal" }

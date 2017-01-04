@@ -1,0 +1,38 @@
+module:
+  name: 公告管理
+  id: notification
+  data: api/v2/idcsnotifications
+
+listFields: # aliasName 显示使用, fieldName 关联字段使用,若显示名称与字段名称一致, 则不需要定义 aliasName
+  - fieldName: 类型
+
+  - fieldName: 标题
+
+  - fieldName: 发布单位
+
+  - fieldName: 是否有效
+
+  - fieldName: 发布时间
+
+searchFields:
+  - fieldName: 员工姓名
+
+  - fieldName: ---
+
+
+fields: #可定义多个中文名称指向同一个字段
+  主键: id
+
+  通知id: notificationId
+
+  类型: notificationType
+
+  标题: title
+
+  发布时间: dateTime
+
+  发布单位: releaseUnit
+
+  是否有效: valid
+
+  刷新时间: lastRefreshDate

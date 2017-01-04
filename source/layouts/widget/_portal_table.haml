@@ -1,15 +1,16 @@
-.block-filter
-  - if (!defined? filterbar) || filterbar == 'normal'
-    %form{:name=>"searchform", :role => "form"}
-      .row
-        .col-md-12
-          = partial :'layouts/widget/filter'
+- if (!defined? filterbar) || filterbar == 'normal'
+  .block-filter
+    - if (!defined? filterbar) || filterbar == 'normal'
+      %form{:name=>"searchform", :role => "form"}
+        .row
+          .col-md-12
+            = partial :'layouts/widget/filter'
 
-  - elsif filterbar == 'page'
-    %form{:name=>"searchform", :role => "form"}
-      .row
-        .col-md-12
-          = partial :'layouts/widget/filter_withpage'
+    - elsif filterbar == 'page'
+      %form{:name=>"searchform", :role => "form"}
+        .row
+          .col-md-12
+            = partial :'layouts/widget/filter_withpage'
 
 -#嵌套模块
 %table.table.table-bordered.table-striped.sortable{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
@@ -17,9 +18,7 @@
     %tr
       - if (!defined? selection) || selection != 'none'
         %th
-          %input{:type => "checkbox", 'ng': {'model':"#{@portal_id}portal.selectedall", 'change': "#{@portal_id}portal.selectAll()"}}/
-
-      %th 序号
+          %input.group-checkable{:type => "checkbox", 'ng': {'model':"#{@portal_id}portal.selectedall", 'change': "#{@portal_id}portal.selectAll()"}}/
 
       - if (!defined? inline_toolbar ) || inline_toolbar != 'none'
         %th 操作
@@ -28,44 +27,15 @@
         %th #{field.aliasName || field.fieldName}
 
   %tbody
-    %tr{ "ng-repeat" => @portal_id + " in " + @portal_id + "s" + $pagefilter}
+    %tr.odd.gradeX{ "ng-repeat" => @portal_id + " in " + @portal_id + "s" + $pagefilter}
       - if (!defined? selection) || selection != 'none'
         %td
           %input.checkboxes{:type => "checkbox", 'ng': {'model': "#{@portal_id}portal.selection[#{@portal_id}.id]", 'change': "#{@portal_id}portal.selectChange()"} }/
-      %td
-        {{$index + 1}}
 
       - if (!defined? inline_toolbar ) || inline_toolbar != 'none'
         %td
-          - inline_attr_disabled = (defined? inline_toolbar) && (inline_toolbar.include? "auditing") ? (@portal_id + ".status.dictDetailCode == 'SM00043'") : ""
-
-          // 查看按钮
-          - if (defined? inline_toolbar) && ( inline_toolbar.include? "view" )
-            = partial :'layouts/buttons/btn', :locals => {:label => "查看", :icon => "fa-file-o", :click => @portal_id + 'portal.view(' + @portal_id + '.id)'}
-
-          // 修改按钮
-          - if (!defined? inline_toolbar) || ( inline_toolbar.include? "update" )
-            = partial :'layouts/buttons/update', :locals => {:click => @portal_id + 'portal.update(' + @portal_id + '.id)', :disabled => "#{inline_attr_disabled}"}
-
-          // 删除按钮
-          - if (!defined? inline_toolbar) || ( inline_toolbar.include? "remove" )
-            = partial :'layouts/buttons/remove', :locals => {:click => @portal_id + 'portal.remove(' + @portal_id + ')', :disabled => "#{inline_attr_disabled}"}
-
-          // 选择按钮
-          - if (defined? inline_toolbar) && ( inline_toolbar.include? "selected" )
-            = partial :'layouts/buttons/btn_info', :locals => {:click => @portal_id + 'portal.checked(' + @portal_id + ')' , :label => '选择', :icon => "fa-check"}
-
-          // 结算
-          - if (defined? inline_toolbar) && ( inline_toolbar.include? "payment" )
-            = partial :'layouts/buttons/btn_warning', :locals => {:click => @portal_id + 'portal.update(' + @portal_id + '.id)' , :label => '结算', :icon => "fa-check"}
-
-          // 选择按钮
-          - if (defined? inline_toolbar) && ( inline_toolbar.include? "checked" )
-            = partial :'layouts/buttons/btn', :locals => {:label => "选择", :icon => "fa-circle-o", :click => @portal_id + 'portal.update(' + @portal_id + '.id)'}
-
-          // 审核按钮
-          - if (defined? inline_toolbar) && ( inline_toolbar.include? "auditing" )
-            = partial :'layouts/buttons/btn', :locals => {:label => "审核", :icon => "fa-gavel", :click => @portal_id + 'portal.auditing(' + @portal_id + '.id)', :disabled => "#{inline_attr_disabled}"}
+          - puts "@portal_id: " << @portal_id
+          = partial 'layouts/buttons', :locals => {:moduleId => "#{@portal_id}", :funcode => ((defined? funcode)? funcode: ''), :purpose => "portal.inline" }
 
       - @portal[$listdataKey].each do |column|
         %td
