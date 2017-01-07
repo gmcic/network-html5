@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02a1272-3ef6-4b84-887c-36ba4cd54af6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/filter.erb" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/api/filter.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sidebar.yml" afterPath="$PROJECT_DIR$/data/sidebar.yml" />
     </list>
     <ignored path="network-html5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,12 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sidebar.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sidebar.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4290">
-              <caret line="286" column="16" lean-forward="false" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="334">
+              <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+              <folding>
+                <marker date="1483783431000" expanded="true" signature="8768:8772" ph="短信配置" />
+                <marker date="1483783431000" expanded="true" signature="8786:8800" ph="fa fa-th-large" />
+                <marker date="1483783431000" expanded="true" signature="8817:8897" ph="gotoFlash…lat_view')" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CasesController.js.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CasesController.js.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -208,10 +211,10 @@
         <option value="$PROJECT_DIR$/source/layouts/application.haml" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" />
         <option value="$PROJECT_DIR$/source/views/flash/nestingflash.html" />
-        <option value="$PROJECT_DIR$/data/sidebar.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/api/filter.erb" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" />
+        <option value="$PROJECT_DIR$/data/sidebar.yml" />
       </list>
     </option>
   </component>
@@ -485,24 +488,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network-html5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network-html5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -623,12 +608,12 @@
       <workItem from="1482973277648" duration="509000" />
       <workItem from="1483238684995" duration="18059000" />
       <workItem from="1483753438632" duration="15265000" />
-      <workItem from="1483781112743" duration="1109000" />
+      <workItem from="1483781112743" duration="1808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94790000" />
+    <option name="totallyTimeSpent" value="95489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,14 +626,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1004" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19852553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642544" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642544" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1049,14 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4290">
-          <caret line="286" column="16" lean-forward="false" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/views/flash/nestingflash.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1091,6 +1068,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+          <folding>
+            <marker date="1483783431000" expanded="true" signature="8768:8772" ph="短信配置" />
+            <marker date="1483783431000" expanded="true" signature="8786:8800" ph="fa fa-th-large" />
+            <marker date="1483783431000" expanded="true" signature="8817:8897" ph="gotoFlash…lat_view')" />
+          </folding>
         </state>
       </provider>
     </entry>
