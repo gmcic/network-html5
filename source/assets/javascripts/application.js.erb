@@ -10,6 +10,10 @@ angular.module('app', ['ngRoute','app.services','blueimp.fileupload'])
                 controller: "DashboardController",
                 templateUrl: "views/dashboard.html"
             })
+            .when('/nestingflash', {
+                controller: "NestingflashController",
+                templateUrl: "views/flash/nestingflash.html"
+            })
 
 <% data.sidebar.each do |header| %>
     <% if (defined? header.controller) && !header.controller.nil? %>
@@ -32,7 +36,4 @@ angular.module('app', ['ngRoute','app.services','blueimp.fileupload'])
 <% end %>
 
             .otherwise({redirectTo: '/'});
-    }])
-    .controller('InboxController', function($scope, $routeParams, $location) {
-        $scope.name = $routeParams.name;
-    });
+    }]);

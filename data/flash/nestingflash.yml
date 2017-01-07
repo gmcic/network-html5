@@ -1,0 +1,21 @@
+module:
+  name: 嵌入Flash
+  id: flash
+  data:
+
+listFields:
+
+  - fieldName: 名称
+
+searchFields:
+  - fieldName: 名称
+
+
+fields:
+
+  所属分类ID: cateNo
+
+  # 分类名称
+  所属分类: itemStyle
+
+  业务类型ID: busiTypeId

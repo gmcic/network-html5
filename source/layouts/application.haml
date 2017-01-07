@@ -88,6 +88,10 @@
 
 %script{:src => "assets/javascripts/BaseController.js", :type => "text/javascript"}
 
+%script{:src => "assets/javascripts/controllers/SidebarController.js", :type => "text/javascript"}
+
+%script{:src => "assets/javascripts/controllers/NestingflashController.js", :type => "text/javascript"}
+
 - data.sidebar.each do |header|
   - if (defined? header.controller) && !header.controller.nil?
     %script{:src => "assets/javascripts/controllers#{header.prefix}/#{header.controller}.js", :type => "text/javascript"}

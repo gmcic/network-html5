@@ -1,4 +1,4 @@
-%nav.navbar.brb{:role => "navigation"}
+%nav.navbar.brb{:role => "navigation", "ng-controller" => "SidebarController"}
   .navbar-header
     %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
       %span.sr-only Toggle navigation
@@ -24,7 +24,12 @@
             %ul.dropdown-menu
               - header.menus.each do |menu|
                 %li
-                  %a{:href => "##{menu.uri}"} #{menu.name}
+                  - if menu.uri.nil?
+                    %a{:href => "javascript:;", "ng-click"=>"#{menu.ngclick}"} #{menu.name}
+                  - elsif menu.controller.nil?
+                    %a{:href => "#{menu.uri}"} #{menu.name}
+                  - else
+                    %a{:href => "##{menu.uri}"} #{menu.name}
                   -#%a{:href => "/bmc.jsp", :target=>"_blank"} #{menu.name}
 
     %form.navbar-form.navbar-right{:role => "search"}

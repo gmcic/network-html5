@@ -9,6 +9,11 @@ notification:
   bundle: app
   server: api/v2/idcsnotifications
 
+flash:
+  name: Flash
+  bundle: flash
+  server:
+
 todo:
   name: 待办事项
   bundle: app

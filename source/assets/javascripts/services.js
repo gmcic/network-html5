@@ -109,3 +109,8 @@ angular.module('app.services', [])
         }
     };
 });
+
+function gotoFlashPage($state) {
+  alert("gotoFlashPage");
+  $state.transitionTo('/personnel/personnel_list');
+}

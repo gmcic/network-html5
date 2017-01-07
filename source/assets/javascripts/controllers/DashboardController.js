@@ -6,7 +6,7 @@ angular.module('app').controller('DashboardController', function($scope, $contro
 
     $controller('BaseController', {$scope: $scope}); //继承
 
-    /**
+  /**
      * 公告管理
      * ---------------------------
      * */
