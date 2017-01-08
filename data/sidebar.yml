@@ -192,49 +192,49 @@
 - name: 值班管理
   icon: fa fa-users
   prefix: /basic
-  uri: javascript:;
-  menus:
-    - name: 综合视图
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      template: /personnel/personnel_list.html
-      controller: PersonnelController
-
-    - name: 值班记录
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
-
-    - name: 值班巡检
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
-
-    - name: 交接班
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
-
-    - name: 排班
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
-
-    - name: 值班制度
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
-
-    - name: 值班说明
-      icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+  url: http://127.0.0.1/a/?a=index&m=index&u_id=1&u_name=admin&u_password=123456&u_real_name=管理员
+#  menus:
+#    - name: 综合视图
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      template: /personnel/personnel_list.html
+#      controller: PersonnelController
+#
+#    - name: 值班记录
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
+#
+#    - name: 值班巡检
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
+#
+#    - name: 交接班
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
+#
+#    - name: 排班
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
+#
+#    - name: 值班制度
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
+#
+#    - name: 值班说明
+#      icon: fa fa-th-large
+#      uri: /personnel/personnel_list
+#      controller: PersonnelController
+#      template: /personnel/personnel_list.html
 
 - name: 工单管理
   icon: fa fa-tasks
