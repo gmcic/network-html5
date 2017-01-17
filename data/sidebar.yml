@@ -46,21 +46,21 @@
 
     - name: 告警事件
       icon: fa fa-stethoscope
-      controller: NestingflashController
-      uri: /iframe
-      template: /flash/iframe.html
+      controller: NothingController
+      uri: /nothing/warning
+      template: /nothing.html
 
-    - name: 维规事件
+    - name: 违规事件
       icon: fa fa-stethoscope
-      controller: NestingflashController
-      uri: /personnel/personnel_list
-      template: /prescription/prescription_list.html
+      controller: NothingController
+      uri: /nothing/violate
+      template: /nothing.html
 
     - name: 可能违规事件
       icon: fa fa-sticky-note
-      controller: NestingflashController
-      uri: /personnel/personnel_list
-      template: /medicalrecord/list.html
+      controller: NothingController
+      uri: /nothing/forecast
+      template: /nothing.html
 
 - name: 业务管理
   icon: fa fa-briefcase
@@ -173,21 +173,21 @@
   menus:
     - name: 资产统计
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      template: /personnel/personnel_list.html
-      controller: PersonnelController
+      controller: NothingController
+      uri: /nothing/assetstatistics
+      template: /nothing.html
 
     - name: 综合查询
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/assetquery
+      template: /nothing.html
 
     - name: 导入导出
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/assetexp
+      template: /nothing.html
 
 - name: 值班管理
   icon: fa fa-users
@@ -243,33 +243,33 @@
   menus:
     - name: 工单统计
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      template: /personnel/personnel_list.html
-      controller: PersonnelController
+      controller: NothingController
+      uri: /nothing/workstatistics
+      template: /nothing.html
 
     - name: 检修计划
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/overhaulplan
+      template: /nothing.html
 
     - name: 紧急抢修
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/emergency
+      template: /nothing.html
 
     - name: 我的工单
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/workorder
+      template: /nothing.html
 
     - name: 缺陷管理
       icon: fa fa-th-large
-      uri: /personnel/personnel_list
-      controller: PersonnelController
-      template: /personnel/personnel_list.html
+      controller: NothingController
+      uri: /nothing/bug
+      template: /nothing.html
 
 - name: 机房管理
   icon: fa fa-database

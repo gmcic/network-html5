@@ -6,6 +6,12 @@
     -#%link{:href => "favicon.ico", :rel => "icon", :type => "image/ico"}/
     %link{:href => "assets/stylesheets/stylesheets.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "assets/plugins/font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "assets/javascripts/history/history.css", :rel => "stylesheet", :type => "text/css"}/
+
+    %script{:src => "assets/plugins/jquery/jquery.min.js", :type => "text/javascript"}
+    -# BEGIN Browser History required section
+    %script{:src => "assets/javascripts/AC_OETags.js", :type => "text/javascript"}
+    %script{:src => "assets/javascripts/history/history.js", :type => "text/javascript"}
 
     = favicon_tag 'favicon.ico'
 
@@ -26,7 +32,6 @@
     = partial 'layouts/partials/trackers'
 
 / BEGIN JQuery
-%script{:src => "assets/plugins/jquery/jquery.min.js", :type => "text/javascript"}
 %script{:src => "assets/plugins/jquery/jquery-ui.min.js", :type => "text/javascript"}
 %script{:src => "assets/plugins/jquery/jquery-migrate.min.js", :type => "text/javascript"}
 %script{:src => "assets/plugins/jquery/globalize.js", :type => "text/javascript"}
