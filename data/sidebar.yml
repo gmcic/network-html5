@@ -3,8 +3,19 @@
 - name: 首页
   icon: fa fa-home
   uri: /
+  prefix: /basic
   controller: DashboardController
   template: /dashboard.html
+  menus:
+    - name: 视图浏览
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('view', 'view/ViewModule.swf', 'childmenuid=topo_flat_view')
+
+    - name: 机房
+      icon: fa fa-stethoscope
+      controller: NothingController
+      uri: /nothing/motorroom
+      template: /nothing.html
 
 #- name: 首页栏目
 #  icon: fa fa-home
@@ -121,7 +132,7 @@
   prefix: /basic
   uri: javascript:;
   menus:
-    - name: 拓扑视图
+    - name: 视图浏览
       icon: fa fa-th-large
       ngclick: gotoFlashPage('view', 'view/ViewModule.swf', 'childmenuid=view_readview')
 
@@ -133,7 +144,7 @@
       icon: fa fa-th-large
       ngclick: gotoFlashPage('topo', 'topo/TopoModule.swf', 'childmenuid=topo_layer_view')
 
-    - name: 拓扑发现
+    - name: 新建视图
       icon: fa fa-th-large
       ngclick: gotoFlashPage('topo', 'topo/TopoModule.swf', 'childmenuid=topo_discovery')
 
@@ -146,6 +157,10 @@
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_alarmrealtimelist')
 
+    - name: 告警速查
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_alarmshowing')
+
     - name: 实时告警
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_moreRealTimeFaults')
@@ -154,10 +169,6 @@
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_alarmhistorylist')
 
-    - name: 告警速查
-      icon: fa fa-th-large
-      ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_alarmshowing')
-
     - name: 维护记录
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_alarmmaintenance')
@@ -165,6 +176,18 @@
     - name: 告警配置
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_config')
+
+    - name: 最近一天告警
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarmFaultsByDay')
+
+    - name: 最近一周告警
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarmFaultsByWeek')
+
+    - name: 最近一月告警
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarmFaultsByMonth')
 
 - name: 资产管理
   icon: fa fa-university
@@ -276,6 +299,12 @@
   prefix: /basic
   uri: javascript:;
   menus:
+    - name: 综合扫描
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/workstatistics
+      template: /nothing.html
+
     - name: 机房概览
       icon: fa fa-th-large
       ngclick: gotoFlashPage('idc', 'idc/IDCModule.swf', 'childmenuid=idc_general')
@@ -288,9 +317,101 @@
       icon: fa fa-th-large
       ngclick: gotoFlashPage('fault', 'fault/FaultModule.swf', 'childmenuid=alarm_conditonRealTimeFaults')
 
-    - name: 机房报表
+    - name: 性能数据
       icon: fa fa-th-large
       ngclick: gotoFlashPage('perf', 'perf/PerfModule.swf', 'childmenuid=perf_queryIdcTask')
+
+    - name: 新建机房
+      icon: fa fa-th-large
+      ngclick: gotoFlashPage('perf', 'perf/PerfModule.swf', 'childmenuid=idc_newview')
+
+- name: 性能采集
+  icon: fa fa-binoculars
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 实时性能采集
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/gather1
+      template: /nothing.html
+
+    - name: 查看采集数据
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/gather2
+      template: /nothing.html
+
+    - name: 查看采集任务
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/gather3
+      template: /nothing.html
+
+    - name: 修改经验阈值
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/gather4
+      template: /nothing.html
+
+    - name: 添加采集任务
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/gather5
+      template: /nothing.html
+
+- name: 统计报表
+  icon: fa fa-area-chart
+  prefix: /basic
+  uri: javascript:;
+  menus:
+    - name: 报表浏览
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reportlist
+      template: /nothing.html
+
+    - name: 即时报表
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reportnow
+      template: /nothing.html
+
+    - name: 流量查询
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reportflux
+      template: /nothing.html
+
+    - name: 性能查询
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reportsearch
+      template: /nothing.html
+
+    - name: topN报表
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reporttop
+      template: /nothing.html
+
+    - name: 设备报表
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reportfix
+      template: /nothing.html
+
+    - name: 任务管理
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reporttask
+      template: /nothing.html
+
+    - name: 报表模板
+      icon: fa fa-th-large
+      controller: NothingController
+      uri: /nothing/reporttemp
+      template: /nothing.html
 
 - name: 系统
   icon: fa fa-cog
