@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02a1272-3ef6-4b84-887c-36ba4cd54af6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/OndutyController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/views/basic/onduty/iframe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sidebar.yml" afterPath="$PROJECT_DIR$/data/sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/views/basic/nothing.html" afterPath="$PROJECT_DIR$/source/views/basic/nothing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html.haml" afterPath="$PROJECT_DIR$/source/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/views/flash/nestingflash.html" afterPath="$PROJECT_DIR$/source/views/flash/nestingflash.html" />
     </list>
     <ignored path="network-html5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +29,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sidebar.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+      <file leaf-file-name="OndutyController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/OndutyController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
-              <caret line="427" column="0" lean-forward="true" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -38,8 +55,8 @@
       <file leaf-file-name="_sidebar.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/layouts/partials/_sidebar.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,21 +65,19 @@
       <file leaf-file-name="NothingController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nothing.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/views/basic/nothing.html">
+      <file leaf-file-name="SidebarController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,14 +85,13 @@
       <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="75">
+              <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="72" />
               <folding>
-                <marker date="1484660429000" expanded="true" signature="684:1534" ph="{...}" />
-                <marker date="1484660429000" expanded="true" signature="690:814" ph="//..." />
-                <marker date="1484660429000" expanded="true" signature="1565:2045" ph="{...}" />
-                <marker date="1484660429000" expanded="true" signature="1571:1674" ph="//..." />
-                <marker date="1484660429000" expanded="true" signature="2051:2386" ph="{...}" />
+                <marker date="1487388805000" expanded="true" signature="685:1535" ph="{...}" />
+                <marker date="1487388805000" expanded="true" signature="691:815" ph="//..." />
+                <marker date="1487388805000" expanded="true" signature="1566:2046" ph="{...}" />
+                <marker date="1487388805000" expanded="true" signature="1572:1675" ph="//..." />
               </folding>
             </state>
           </provider>
@@ -86,38 +100,8 @@
       <file leaf-file-name="application.js.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NestingflashController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/NestingflashController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/assets/javascripts/BaseController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iframe.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -127,7 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>- fields = data[&quot;&quot; &lt;&lt; @module[$keyword] &lt;&lt; &quot;-&quot; &lt;&lt; $keyword].fields</find>
       <find>data[&quot;&quot;</find>
       <find>公告</find>
       <find>待</find>
@@ -157,6 +140,7 @@
       <find>alert</find>
       <find>性能采集</find>
       <find>值班</find>
+      <find>system_changepwd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/layouts/widget/_portal_view.haml" />
-        <option value="$PROJECT_DIR$/source/layouts/widget/_print_table.haml" />
         <option value="$PROJECT_DIR$/source/layouts/widget/_side.haml" />
         <option value="$PROJECT_DIR$/helpers/view_helpers.rb" />
         <option value="$PROJECT_DIR$/source/assets/pages/DashboardController.js" />
@@ -197,25 +179,27 @@
         <option value="$PROJECT_DIR$/source/assets/javascripts/services.js" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/flash/NestingflashController.js" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/application.js.erb" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/api/filter.erb" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/api/CasesController.js.erb" />
         <option value="$PROJECT_DIR$/source/login.jsp" />
         <option value="$PROJECT_DIR$/source/layouts/login.haml" />
         <option value="$PROJECT_DIR$/source/layouts/partials/_navbar.haml" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/NestingflashController.js" />
-        <option value="$PROJECT_DIR$/source/views/flash/nestingflash.html" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/AC_OETags.js" />
         <option value="$PROJECT_DIR$/source/layouts/application.haml" />
-        <option value="$PROJECT_DIR$/source/index.html.haml" />
-        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/BaseController.js" />
-        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js" />
-        <option value="$PROJECT_DIR$/data/sidebar.yml" />
         <option value="$PROJECT_DIR$/source/layouts/partials/_sidebar.haml" />
         <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js" />
         <option value="$PROJECT_DIR$/source/views/basic/nothing.html" />
+        <option value="$PROJECT_DIR$/source/views/basic/flash/iframe.html" />
+        <option value="$PROJECT_DIR$/source/views/flash/nestingflash.html" />
+        <option value="$PROJECT_DIR$/source/index.html.haml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js" />
+        <option value="$PROJECT_DIR$/data/sidebar.yml" />
+        <option value="$PROJECT_DIR$/source/views/basic/onduty/iframe.html" />
+        <option value="$PROJECT_DIR$/source/assets/javascripts/controllers/basic/OndutyController.js" />
       </list>
     </option>
   </component>
@@ -245,6 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,7 +293,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network-html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onduty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,70 +465,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network-html5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network-html5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../taurus-guides" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml&#10;basecon&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/BaseController.js&#10;_nav&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;application.j&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/application.js.erb&#10;appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/application.js.erb&#10;service&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/services.js&#10;base&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/BaseController.js&#10;DashboardController&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/controllers/app/DashboardController.js&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;dash&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;common&#9;null&#9;null&#10;help&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/helpers/view_helpers.rb&#10;comm&#9;null&#9;null&#10;basec&#9;null&#9;null&#10;dashbo&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
+    <property name="SearchEverywhereHistoryKey" value="sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;sidebar.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml&#10;basecon&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/BaseController.js&#10;_nav&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;application.j&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/application.js.erb&#10;appli&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/application.js.erb&#10;service&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/services.js&#10;base&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/BaseController.js&#10;DashboardController&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/javascripts/controllers/app/DashboardController.js&#10;app&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/application.haml&#10;dash&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;common&#9;null&#9;null&#10;help&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/helpers/view_helpers.rb&#10;comm&#9;null&#9;null&#10;basec&#9;null&#9;null&#10;dashbo&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/pages/DashboardController.js&#10;wlight_rtl.png&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/assets/images/background/wlight_rtl.png&#10;navbar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_navbar.haml&#10;_te&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/inputs/_text.haml&#10;modal-portal-lg.&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_modal-portal-lg.haml&#10;.pull-right&#9;null&#9;null&#10;pagination&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_pagination.haml&#10;portal_table&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/widget/_portal_table.haml&#10;sideb&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/data/sidebar.yml&#10;_sidebar&#9;FILE&#9;file:///Users/tim/workspace/webstorm/network-html5/source/layouts/partials/_sidebar.haml" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/views/basic" />
-      <recent name="$PROJECT_DIR$/source/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/source/layouts" />
-      <recent name="$PROJECT_DIR$/data/basic" />
-      <recent name="$PROJECT_DIR$/data/api" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers" />
       <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers/basic" />
       <recent name="$PROJECT_DIR$/source/assets/javascripts/controllers/app" />
       <recent name="$PROJECT_DIR$/data/app" />
       <recent name="$PROJECT_DIR$/source/views/history" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/views/basic" />
+      <recent name="$PROJECT_DIR$/source/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/source/layouts" />
+      <recent name="$PROJECT_DIR$/data/basic" />
+      <recent name="$PROJECT_DIR$/data/api" />
     </key>
   </component>
   <component name="RunManager">
@@ -590,12 +592,14 @@
       <workItem from="1483753438632" duration="15265000" />
       <workItem from="1483781112743" duration="8716000" />
       <workItem from="1484656916805" duration="6274000" />
-      <workItem from="1486774760321" duration="3159000" />
+      <workItem from="1486774760321" duration="3260000" />
+      <workItem from="1487383425755" duration="4973000" />
+      <workItem from="1487422761993" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111830000" />
+    <option name="totallyTimeSpent" value="117138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,9 +617,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17798841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22552255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22552255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -649,42 +653,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/SettingController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/netview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/app/todo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/views/app/notification/notification_list.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal-full.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/partials/_portlet.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -762,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/plugins/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="240" column="42" lean-forward="true" selection-start-line="240" selection-start-column="42" selection-end-line="240" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/modal/_modal_pattern.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -781,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="147" column="12" lean-forward="true" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/views/flash/nestingflash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="149" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="149" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/login.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -918,24 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <marker date="1482327277000" expanded="true" signature="5231:6096" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,11 +880,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/AC_OETags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="96" column="38" lean-forward="true" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/app/NotificationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/javascripts/BaseController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-11790">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/bmc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/plugins/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11009" column="2" lean-forward="false" selection-start-line="11009" selection-start-column="2" selection-end-line="11009" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4605">
+          <caret line="471" column="74" lean-forward="true" selection-start-line="471" selection-start-column="74" selection-end-line="471" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -958,74 +926,32 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="150">
-            <caret line="10" column="72" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="72" />
+            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/DashboardController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6720">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <marker date="1484662676000" expanded="true" signature="23497:23619" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-          <folding>
-            <marker date="1484660429000" expanded="true" signature="684:1534" ph="{...}" />
-            <marker date="1484660429000" expanded="true" signature="690:814" ph="//..." />
-            <marker date="1484660429000" expanded="true" signature="1565:2045" ph="{...}" />
-            <marker date="1484660429000" expanded="true" signature="1571:1674" ph="//..." />
-            <marker date="1484660429000" expanded="true" signature="2051:2386" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/NestingflashController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="427" column="0" lean-forward="true" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/partials/_sidebar.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js">
+    <entry file="file://$PROJECT_DIR$/source/views/basic/flash/iframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1033,9 +959,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/flash/nestingflash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/application.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/SidebarController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/NothingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="72" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1487388805000" expanded="true" signature="685:1535" ph="{...}" />
+            <marker date="1487388805000" expanded="true" signature="691:815" ph="//..." />
+            <marker date="1487388805000" expanded="true" signature="1566:2046" ph="{...}" />
+            <marker date="1487388805000" expanded="true" signature="1572:1675" ph="//..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/views/basic/onduty/iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/javascripts/controllers/basic/OndutyController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

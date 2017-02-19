@@ -9,9 +9,15 @@
   menus:
     - name: 视图浏览
       icon: fa fa-th-large
-      ngclick: gotoFlashPage('view', 'view/ViewModule.swf', 'childmenuid=topo_flat_view')
+      ngclick: gotoFlashPage('view', 'view/ViewModule.swf', 'childmenuid=view_readview')
 
     - name: 机房
+      icon: fa fa-stethoscope
+      controller: NothingController
+      uri: /nothing/motorroom
+      template: /nothing.html
+
+    - name: 设置
       icon: fa fa-stethoscope
       controller: NothingController
       uri: /nothing/motorroom
@@ -53,7 +59,9 @@
   menus:
     - name: 统计视图
       icon: fa fa-stethoscope
-      ngclick: gotoFlashPage('config', 'config/ConfigModule.swf', 'childmenuid=config_index_menu')
+      controller: NothingController
+      uri: /nothing/warning
+      template: /nothing.html
 
     - name: 告警事件
       icon: fa fa-stethoscope
@@ -215,7 +223,11 @@
 - name: 值班管理
   icon: fa fa-users
   prefix: /basic
-  url: http://127.0.0.1/a/?a=index&m=index&u_id=1&u_name=admin&u_password=123456&u_real_name=管理员
+  controller: OndutyController
+  uri: /onduty
+  template: /onduty/iframe.html
+
+#  url: http://127.0.0.1/a/?a=index&m=index&u_id=1&u_name=admin&u_password=123456&u_real_name=管理员
 #  menus:
 #    - name: 综合视图
 #      icon: fa fa-th-large
@@ -428,7 +440,7 @@
 
     - name: 修改密码
       icon: fa fa-th-large
-      ngclick: gotoFlashPage('system', 'system/SystemModule.swf', 'childmenuid=system_changepwd')
+      ngclick: gotoFlashPage('system', 'system/SystemModule.swf', 'childmenuid=修改密码')
 
     - name: 邮箱配置
       icon: fa fa-th-large
@@ -440,7 +452,7 @@
 
     - name: 用户注销
       icon: fa fa-th-large
-      ngclick: gotoFlashPage('system', 'system/SystemModule.swf', 'childmenuid=topo_flat_view')
+      ngclick: gotoFlashPage('system', 'system/SystemModule.swf', 'childmenuid=exit')
 #
 #    - name: 其他
 #      icon: fa fa-th-large
