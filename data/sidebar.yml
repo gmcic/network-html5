@@ -23,6 +23,12 @@
       uri: /nothing/motorroom
       template: /nothing.html
 
+    - name: 地图雷达
+      icon: fa fa-stethoscope
+      controller: MapradarController
+      uri: /basic/mapradar
+      template: /mapradar/mapradar.html
+
 #- name: 首页栏目
 #  icon: fa fa-home
 #  prefix: /app
