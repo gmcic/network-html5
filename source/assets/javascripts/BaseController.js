@@ -7,7 +7,10 @@ angular.module('app').controller('BaseController', function ($scope, $http, comm
   $http.defaults.headers.post['Content-Type'] = 'application/json';
 
   $('#ngview').show();
-  $('#nestingflash').addClass('hide');
+  $('#nestingflash').height(function(index, height){
+    // alert("index: " + index + ", Height: " + height);
+    return 0;
+  });
 
   // 使用日期控件
   jQuery().datepicker && $(".date-picker-btn").datepicker({

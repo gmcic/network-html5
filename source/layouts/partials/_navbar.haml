@@ -17,9 +17,14 @@
 
           - else
             - if !header.url.nil?
-              %a.dropdown-toggle{:href => "#{header.url}"}
-                %span{:class => "#{header.icon || 'icon-bar-chart'}" }
-                #{header.name}
+              - if !header.target.nil?
+                %a.dropdown-toggle{:href => "#{header.url}", :target => '#{header.target}'}
+                  %span{:class => "#{header.icon || 'icon-bar-chart'}" }
+                  #{header.name}
+              - else
+                %a.dropdown-toggle{:href => "#{header.url}"}
+                  %span{:class => "#{header.icon || 'icon-bar-chart'}" }
+                  #{header.name}
 
             - else
               %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "##{header.uri}"}

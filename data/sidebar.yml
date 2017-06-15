@@ -4,9 +4,14 @@
   icon: fa fa-home
   uri: /
   prefix: /basic
-  controller: DashboardController
-  template: /dashboard.html
+#  controller: DashboardController
+#  template: /dashboard.html
   menus:
+#    - name: 首页
+#      icon: fa fa-th-large
+#      uri: /home
+#      controller: NothingController
+
     - name: 视图浏览
       icon: fa fa-th-large
       ngclick: gotoFlashPage('view', 'view/ViewModule.swf', 'childmenuid=view_readview')
@@ -280,37 +285,38 @@
 - name: 工单管理
   icon: fa fa-tasks
   prefix: /basic
-  uri: javascript:;
-  menus:
-    - name: 工单统计
-      icon: fa fa-th-large
-      controller: NothingController
-      uri: /nothing/workstatistics
-      template: /nothing.html
-
-    - name: 检修计划
-      icon: fa fa-th-large
-      controller: NothingController
-      uri: /nothing/overhaulplan
-      template: /nothing.html
-
-    - name: 紧急抢修
-      icon: fa fa-th-large
-      controller: NothingController
-      uri: /nothing/emergency
-      template: /nothing.html
-
-    - name: 我的工单
-      icon: fa fa-th-large
-      controller: NothingController
-      uri: /nothing/workorder
-      template: /nothing.html
-
-    - name: 缺陷管理
-      icon: fa fa-th-large
-      controller: NothingController
-      uri: /nothing/bug
-      template: /nothing.html
+  url: http://10.234.156.164:99
+  target: _blank
+#  menus:
+#    - name: 工单统计
+#      icon: fa fa-th-large
+#      controller: NothingController
+#      uri: /nothing/workstatistics
+#      template: /nothing.html
+#
+#    - name: 检修计划
+#      icon: fa fa-th-large
+#      controller: NothingController
+#      uri: /nothing/overhaulplan
+#      template: /nothing.html
+#
+#    - name: 紧急抢修
+#      icon: fa fa-th-large
+#      controller: NothingController
+#      uri: /nothing/emergency
+#      template: /nothing.html
+#
+#    - name: 我的工单
+#      icon: fa fa-th-large
+#      controller: NothingController
+#      uri: /nothing/workorder
+#      template: /nothing.html
+#
+#    - name: 缺陷管理
+#      icon: fa fa-th-large
+#      controller: NothingController
+#      uri: /nothing/bug
+#      template: /nothing.html
 
 - name: 机房管理
   icon: fa fa-database

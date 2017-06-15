@@ -1,9 +1,9 @@
 %div#ngview{"ng-view" => ""}
-#nestingflash.hide
+#nestingflash{"style" => "height: 0px"}
   Flash
 
 :javascript
-  $('#nestingflash').height(document.documentElement.clientHeight - 75);
+  var nestingflashHeight = document.documentElement.clientHeight - 75;
 
   var requiredMajorVersion = 9;
 
@@ -63,6 +63,5 @@
       + '<a href=http://www.adobe.com/go/getflash/>Get Flash</a>';
 
     $('#nestingflash').html(alternateContent);  // insert non-flash content
-
 
   }

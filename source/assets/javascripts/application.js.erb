@@ -10,6 +10,10 @@ angular.module('app', ['ngRoute','app.services','blueimp.fileupload'])
                 controller: "DashboardController",
                 templateUrl: "views/dashboard.html"
             })
+            .when('/home', {
+                controller: "DashboardController",
+                templateUrl: "views/dashboard.html"
+            })
             .when('/nestingflash', {
                 controller: "NestingflashController",
                 templateUrl: "views/flash/nestingflash.html"

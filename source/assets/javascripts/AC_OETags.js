@@ -223,7 +223,7 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
         break;
       case "src":
       case "movie":
-        args[i+1] = "https://192.168.0.111:8443/" + AC_AddExtension(args[i+1], ext);
+        args[i+1] = "http://localhost:8080/health/Index.swf";
         ret.embedAttrs["src"] = args[i+1];
         ret.params[srcParamName] = args[i+1];
         break;
